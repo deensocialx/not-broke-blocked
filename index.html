@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Not Broke. Blocked. | The 7 Laws That Restore the Flow of Your Rizq</title>
-<meta name="description" content="You are not behind. You are not broken. You are blocked — and there is a difference. A digital course for Muslim men ready to restore the flow of their rizq.">
+<meta name="description" content="You are not behind. You are not broken. You are blocked. And there is a difference. A digital course for Muslim men ready to restore the flow of their rizq.">
 
 <!-- ANALYTICS -->
 
@@ -58,6 +58,37 @@ body {
 }
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
+
+/* ─── BRAND BAR ─────────────────────────────────────── */
+.brand-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+  background: var(--surface);
+  border-top: 1px solid var(--border-dim);
+  border-bottom: 1px solid var(--border-dim);
+  padding: 16px var(--pad);
+  text-align: center;
+}
+.brand-bar-item {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 4px 20px;
+}
+.brand-bar-sep {
+  color: var(--gold-dim);
+  font-size: 8px;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+@media (max-width: 440px) {
+  .brand-bar { gap: 0; }
+  .brand-bar-item { padding: 4px 12px; font-size: 10px; }
+}
 
 /* ─── GOLD SPINE (desktop) ───────────────────────────── */
 .spine {
@@ -126,9 +157,10 @@ img { display: block; max-width: 100%; }
 .ln.strong  { color: var(--text); font-weight: 400; }
 .ln.gold    { color: var(--gold); }
 .ln.sm      { font-size: 13px; color: var(--muted); }
-.ln.serif   { font-family: var(--serif); font-size: 21px; font-style: italic; font-weight: 300; color: var(--mid); }
-.ln.serif.lg  { font-size: 26px; color: var(--text); }
-.ln.serif.xl  { font-size: 30px; color: var(--text); }
+.ln.serif      { font-family: var(--serif); font-size: 21px; font-style: italic; font-weight: 300; color: var(--mid); }
+.ln.serif.lg   { font-size: 26px; color: var(--text); }
+.ln.serif.xl   { font-size: 30px; color: var(--text); }
+.ln.serif.stat { font-style: normal; font-size: 20px; color: var(--gold); }
 @media (max-width: 480px) {
   .ln.serif    { font-size: 19px; }
   .ln.serif.lg { font-size: 22px; }
@@ -259,33 +291,7 @@ img { display: block; max-width: 100%; }
   max-width: 480px;
 }
 
-/* ─── PROOF BAR ──────────────────────────────────────── */
-.proof-bar {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background: var(--surface);
-  border-top: 1px solid var(--border-dim);
-  border-bottom: 1px solid var(--border-dim);
-}
-.proof-item {
-  padding: 18px 12px;
-  text-align: center;
-  border-right: 1px solid var(--border-dim);
-}
-.proof-item:last-child { border-right: none; }
-.proof-num {
-  font-family: var(--serif);
-  font-size: 22px;
-  color: var(--gold);
-  line-height: 1;
-  margin-bottom: 4px;
-}
-.proof-label {
-  font-size: 9px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
+/* proof-bar removed */
 
 /* ─── QURAN PULL ─────────────────────────────────────── */
 .quran-block {
@@ -572,56 +578,7 @@ img { display: block; max-width: 100%; }
   margin-top: 4px;
 }
 
-/* ─── FOUNDER ARC ────────────────────────────────────── */
-.arc-item {
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  gap: 24px;
-  padding: 32px 0;
-  border-bottom: 1px solid var(--border-dim);
-  align-items: start;
-}
-.arc-item:last-child { border-bottom: none; }
-.arc-marker {
-  font-family: var(--serif);
-  font-size: 38px;
-  font-weight: 300;
-  color: rgba(196,154,60,0.18);
-  line-height: 1;
-  text-align: right;
-  padding-top: 4px;
-}
-.arc-label {
-  font-size: 9.5px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--gold-dim);
-  margin-bottom: 8px;
-}
-.arc-h {
-  font-family: var(--serif);
-  font-size: clamp(20px, 3vw, 26px);
-  color: var(--text);
-  font-weight: 300;
-  line-height: 1.2;
-  margin-bottom: 12px;
-}
-.arc-h em { font-style: italic; color: var(--gold-dim); }
-.arc-bridge {
-  margin-top: 16px;
-  padding: 12px 16px;
-  background: var(--goldfade);
-  border-left: 2px solid var(--gold-dim);
-  font-size: 13px;
-  color: var(--muted);
-  font-style: italic;
-  line-height: 1.65;
-}
-.arc-bridge strong { color: var(--gold-dim); font-style: normal; }
-@media (max-width: 480px) {
-  .arc-item { grid-template-columns: 44px 1fr; gap: 16px; }
-  .arc-marker { font-size: 28px; }
-}
+/* arc removed */
 
 /* ─── CREATOR CARD ───────────────────────────────────── */
 .creator-card {
@@ -868,7 +825,7 @@ img { display: block; max-width: 100%; }
 
 <!-- Sticky bottom CTA — mobile only -->
 <div class="sticky-cta">
-  <a href="[CHECKOUT_URL]" class="cta wide">Enter the Course — $47 &rarr;</a>
+  <a href="[CHECKOUT_URL]" class="cta wide">Enter the Course &middot; $47 &rarr;</a>
 </div>
 
 
@@ -876,53 +833,37 @@ img { display: block; max-width: 100%; }
 <div class="hero">
   <div class="w">
 
-    <div class="badge reveal">
-      <span class="badge-dot"></span>
-      Founding Price &middot; First Cohort
-    </div>
-
-    <h1 class="hero-h1 reveal" style="transition-delay:0.08s;">
+    <h1 class="hero-h1 reveal">
       Not Broke<span class="dot">.</span><br>Blocked<span class="dot">.</span>
     </h1>
 
-    <p class="hero-hook reveal" style="transition-delay:0.18s;">
+    <p class="hero-hook reveal" style="transition-delay:0.1s;">
       The 7 Laws That Restore the Flow of Your Rizq
     </p>
 
-    <div class="reveal stagger" style="transition-delay:0.26s;">
+    <div class="reveal stagger" style="transition-delay:0.2s;">
       <span class="ln serif xl">You are not behind.</span>
       <span class="ln serif lg">You are not broken.</span>
-      <span class="ln serif" style="color:var(--gold);font-style:normal;font-size:20px;font-family:var(--serif);">You are blocked — and there is a difference.</span>
+      <span class="ln serif stat">You are blocked. And there is a difference.</span>
     </div>
 
     <div class="gap"></div>
 
-    <div class="reveal" style="transition-delay:0.34s;">
+    <div class="reveal" style="transition-delay:0.3s;">
       <a href="[CHECKOUT_URL]" class="cta">Enter the Course &rarr;</a>
-      <p class="price-note">Founding price: <s>$97</s> &rarr; <strong>$47</strong> &middot; Instant access &middot; 7-day guarantee</p>
+      <p class="price-note"><s>$97</s> &rarr; <strong>$47</strong> &middot; Instant access &middot; 7-day guarantee</p>
     </div>
 
   </div>
 </div>
 
-<!-- ═══════════ PROOF BAR ═══════════ -->
-<div class="proof-bar reveal-fast">
-  <div class="proof-item">
-    <div class="proof-num">7</div>
-    <div class="proof-label">Laws</div>
-  </div>
-  <div class="proof-item">
-    <div class="proof-num">3</div>
-    <div class="proof-label">Source Texts</div>
-  </div>
-  <div class="proof-item">
-    <div class="proof-num">$47</div>
-    <div class="proof-label">Founding Price</div>
-  </div>
-  <div class="proof-item">
-    <div class="proof-num">7 Day</div>
-    <div class="proof-label">Guarantee</div>
-  </div>
+<!-- ═══════════ BRAND BAR ═══════════ -->
+<div class="brand-bar reveal-fast">
+  <span class="brand-bar-item">Rooted in Quran &amp; Sunnah</span>
+  <span class="brand-bar-sep">✦</span>
+  <span class="brand-bar-item">Seven Laws in Sequence</span>
+  <span class="brand-bar-sep">✦</span>
+  <span class="brand-bar-item">For the Muslim Man</span>
 </div>
 
 
@@ -935,16 +876,22 @@ img { display: block; max-width: 100%; }
   </div>
 
   <div class="reveal stagger">
-    <span class="ln serif xl">A woman. A valley. Nothing.</span>
-    <span class="ln serif lg">No water. No people. No plan.</span>
-    <span class="ln serif">Just open desert — and her infant son.</span>
+    <span class="ln serif xl">Let me tell you about a woman</span>
+    <span class="ln serif lg">who was left in a valley with nothing.</span>
+    <span class="ln serif">No water. No shelter. No other people.</span>
+  </div>
+
+  <div class="gap-sm"></div>
+
+  <div class="reveal stagger">
+    <span class="ln">Just open desert. And her infant son.</span>
   </div>
 
   <div class="gap-sm"></div>
 
   <div class="reveal stagger">
     <span class="ln">Her name was Hajar.</span>
-    <span class="ln">Ibrahim AS had brought her to the valley and set down what little they had.</span>
+    <span class="ln">Ibrahim AS had brought her there and set down what little they had.</span>
     <span class="ln">Then he turned to leave.</span>
   </div>
 
@@ -975,7 +922,7 @@ img { display: block; max-width: 100%; }
   <div class="reveal stagger">
     <span class="ln">And she ran.</span>
     <span class="ln">Seven times between two hills.</span>
-    <span class="ln">Scanning the horizon for something — anything.</span>
+    <span class="ln">Scanning the horizon for something. Anything.</span>
   </div>
 
   <div class="gap-sm"></div>
@@ -1076,7 +1023,7 @@ img { display: block; max-width: 100%; }
 
   <div class="reveal stagger">
     <span class="ln">What is actually happening is this:</span>
-    <span class="ln">At the chest level — beneath the du'a, beneath the effort — there is a belief running.</span>
+    <span class="ln">At the chest level, beneath the du'a and beneath the effort, there is a belief running.</span>
     <span class="ln">A quiet assumption about your Lord.</span>
     <span class="ln">Planted long before you were aware.</span>
     <span class="ln">Shaping everything you receive.</span>
@@ -1086,10 +1033,10 @@ img { display: block; max-width: 100%; }
 
   <div class="reveal stagger">
     <span class="ln strong">The technical name for this is bad dhann of Allah.</span>
-    <span class="ln">A wrong opinion of your Lord — not at the level of declaration, but at the level of the chest.</span>
+    <span class="ln">A wrong opinion of your Lord. Not at the level of declaration, but at the level of the chest.</span>
     <span class="ln">You say you trust in rizq. Your nervous system is still in scarcity.</span>
     <span class="ln">You know tawakkul. But you cannot feel it.</span>
-    <span class="ln">That gap — between knowing and feeling — is where the blockage lives.</span>
+    <span class="ln">That gap, between knowing and feeling, is where the blockage lives.</span>
   </div>
 
   <span class="gap"></span>
@@ -1097,15 +1044,15 @@ img { display: block; max-width: 100%; }
   <div class="blockers reveal stagger">
     <div class="blocker-item">
       <span class="bi-num">01</span>
-      How you were taught to think about provision — and why that teaching became a ceiling you cannot see
+      How you were taught to think about provision, and why that teaching became a ceiling you cannot see
     </div>
     <div class="blocker-item">
       <span class="bi-num">02</span>
-      A low, unexamined guilt about not being further along — running quietly in the background of every decision
+      A low, unexamined guilt about not being further along, running quietly in the background of every decision
     </div>
     <div class="blocker-item">
       <span class="bi-num">03</span>
-      The false belief that your deen and your provision live in separate lanes — one a spiritual matter, one a worldly one
+      The false belief that your deen and your provision live in separate lanes. One spiritual. One worldly.
     </div>
   </div>
 
@@ -1148,7 +1095,7 @@ img { display: block; max-width: 100%; }
       <span class="tried-x">&#x2715;</span>
       <div>
         <strong>You learned more about deen.</strong>
-        <span>Knowing that Allah is Ar-Razzaq in your mind is not the same as certainty in your chest. The gap between those two places is where the blockage lives — and knowledge alone cannot cross it.</span>
+        <span>Knowing that Allah is Ar-Razzaq in your mind is not the same as certainty in your chest. The gap between those two places is where the blockage lives. Knowledge alone cannot cross it.</span>
       </div>
     </div>
     <div class="tried-item">
@@ -1168,7 +1115,7 @@ img { display: block; max-width: 100%; }
     <div class="tried-item">
       <span class="tried-x">&#x2715;</span>
       <div>
-        <strong>You told yourself to have tawakkul — but your body would not follow.</strong>
+        <strong>You told yourself to have tawakkul. But your body would not follow.</strong>
         <span>Tawakkul is not a thought. It is a state. And entering that state requires something that affirmations cannot produce and willpower cannot force.</span>
       </div>
     </div>
@@ -1179,7 +1126,7 @@ img { display: block; max-width: 100%; }
   <div class="reveal stagger">
     <span class="ln">None of these things are wrong.</span>
     <span class="ln">They just do not reach the root.</span>
-    <span class="ln strong">The root is a wrong opinion of Allah. And once that is corrected — at the chest level, not just the mind — provision stops feeling like something you chase.</span>
+    <span class="ln strong">The root is a wrong opinion of Allah. Once that is corrected, at the chest level and not just the mind, provision stops feeling like something you chase.</span>
     <span class="ln strong">It becomes something that finds you.</span>
   </div>
 
@@ -1230,7 +1177,7 @@ img { display: block; max-width: 100%; }
   <div class="system-card reveal">
     <div class="system-eyebrow">Not Broke. Blocked.</div>
     <div class="system-title">The Quran has a system for provision.</div>
-    <p class="system-body">Not a metaphor. A real system. Allah placed laws into His creation that govern exactly how rizq flows — and exactly what stops it. These laws are not hidden. They are in the Quran and the Sunnah. They do not play favourites. They do not bend for effort alone. They respond to one thing: alignment. This course is that system, taught in sequence, from the inside out.</p>
+    <p class="system-body">Not a metaphor. A real system. Allah placed laws into His creation that govern exactly how rizq flows and exactly what stops it. These laws are not hidden. They are in the Quran and the Sunnah. They do not play favourites. They do not bend for effort alone. They respond to one thing: alignment. This course is that system, taught in sequence, from the inside out.</p>
   </div>
 
   <!-- THE 7 LAWS -->
@@ -1243,7 +1190,7 @@ img { display: block; max-width: 100%; }
         <span class="law-n">Law I</span>
         <div class="law-body">
           <div class="law-title">The Law of Source</div>
-          <div class="law-desc">Rizq comes from Allah — not through people. Misidentify the source and every action you take points the wrong way.</div>
+          <div class="law-desc">Rizq comes from Allah. Not through people. Misidentify the source and every action you take points the wrong way.</div>
         </div>
       </div>
       <div class="law-row">
@@ -1264,21 +1211,21 @@ img { display: block; max-width: 100%; }
         <span class="law-n">Law IV</span>
         <div class="law-body">
           <div class="law-title">The Law of Worthiness</div>
-          <div class="law-desc">Rizq flows to those who believe they deserve it. This is the law most men never examine — and the one that explains everything.</div>
+          <div class="law-desc">Rizq flows to those who believe they deserve it. This is the law most men never examine. And the one that explains everything.</div>
         </div>
       </div>
       <div class="law-row">
         <span class="law-n">Law V</span>
         <div class="law-body">
           <div class="law-title">The Law of Vibrational Alignment</div>
-          <div class="law-desc">Your internal state is a frequency. This law teaches you what yours is currently broadcasting — and how to correct it.</div>
+          <div class="law-desc">Your internal state is a frequency. This law teaches you what yours is currently broadcasting and how to correct it.</div>
         </div>
       </div>
       <div class="law-row">
         <span class="law-n">Law VI</span>
         <div class="law-body">
           <div class="law-title">The Law of Inspired Movement</div>
-          <div class="law-desc">Faith is the posture. Action is the proof. Full effort, no attachment to outcome — the Prophet Dawood model of khalifah in motion.</div>
+          <div class="law-desc">Faith is the posture. Action is the proof. Full effort, no attachment to outcome. The Prophet Dawood model.</div>
         </div>
       </div>
       <div class="law-row">
@@ -1292,7 +1239,7 @@ img { display: block; max-width: 100%; }
   </div>
 
   <div class="reveal">
-    <span class="ln sm">Seven laws. Each one removes a layer. They work in sequence — the foundation of each one is the law before it.</span>
+    <span class="ln sm">Seven laws. Each one removes a layer. They work in sequence. The foundation of each one is the law before it.</span>
   </div>
 
 </div>
@@ -1323,7 +1270,7 @@ img { display: block; max-width: 100%; }
       <span class="in-num">II</span>
       <div>
         <strong>Replace it at the level that actually changes things</strong>
-        <span class="sub">Using the words of Allah — not motivation, not affirmations, not someone else's story</span>
+        <span class="sub">Using the words of Allah. Not motivation, not affirmations, not someone else's story</span>
       </div>
     </div>
     <div class="inside-item">
@@ -1336,7 +1283,7 @@ img { display: block; max-width: 100%; }
     <div class="inside-item">
       <span class="in-num">IV</span>
       <div>
-        <strong>Take action that compounds — without the anxiety of outcome</strong>
+        <strong>Take action that compounds, without the anxiety of outcome</strong>
         <span class="sub">Full movement, no burnout, because you understand where your strength actually comes from</span>
       </div>
     </div>
@@ -1344,7 +1291,7 @@ img { display: block; max-width: 100%; }
       <span class="in-num">V</span>
       <div>
         <strong>Create the internal conditions that barakah follows</strong>
-        <span class="sub">Barakah is not random. It has conditions. This course names them — and shows you how to stop unconsciously undoing them</span>
+        <span class="sub">Barakah is not random. It has conditions. This course names them and shows you how to stop unconsciously undoing them</span>
       </div>
     </div>
   </div>
@@ -1372,12 +1319,12 @@ img { display: block; max-width: 100%; }
   <div class="bonus-card reveal">
     <div class="bonus-eyebrow">Bonus 01 &middot; Free with enrolment</div>
     <div class="bonus-title">The Focus Economy</div>
-    <p class="bonus-desc">A practical field guide for the Muslim man who wants to turn his clarity into income. Built around the One Person Business model — grounded in the same principles as the core course.</p>
+    <p class="bonus-desc">A practical field guide for the Muslim man who wants to turn his clarity into income. Built around the One Person Business model, grounded in the same principles as the core course.</p>
     <ul class="bonus-list">
       <li>Six parts from identity to income architecture</li>
       <li>Worksheets and action steps at each stage</li>
       <li>30-day activation blueprint</li>
-      <li>Built on the same Islamic framework — deen and dunya in the same lane</li>
+      <li>Built on the same Islamic framework. Deen and dunya in the same lane.</li>
     </ul>
   </div>
 
@@ -1396,79 +1343,43 @@ img { display: block; max-width: 100%; }
 </div>
 
 
-<!-- ═══════════ FOUNDER ═══════════ -->
+<!-- ═══════════ WHO BUILT THIS ═══════════ -->
 <hr class="rule">
 <div class="section">
 <div class="w">
 
-  <div class="reveal">
-    <div class="eyebrow">The Founder</div>
-  </div>
-
   <div class="reveal stagger">
-    <span class="ln serif xl">The man who went first</span>
-    <span class="ln serif lg">is already you.</span>
+    <span class="ln serif xl">I know this works.</span>
+    <span class="ln serif lg">Because I lived the opposite.</span>
   </div>
 
   <div class="gap"></div>
 
-  <!-- THEN / TURN / NOW arc from brand identity -->
-  <div class="arc-item reveal">
-    <div class="arc-marker">Then</div>
-    <div>
-      <div class="arc-label">The Condition — Running the Defaults</div>
-      <h3 class="arc-h">A man shaped by <em>the system.</em></h3>
-      <div class="creator-card" style="margin:0;">
-        <div class="creator-top">
-          <!-- PHOTO PLACEHOLDER — replace this div with an <img> element when your photo is ready -->
-          <div class="creator-avatar">
-            <span class="creator-initials">ID</span>
-          </div>
-          <div>
-            <div class="creator-name">Imaad Deen</div>
-            <div class="creator-handle">@deensocial</div>
-          </div>
-        </div>
-        <span class="ln">I made du'a for rizq while quietly blocking it with the hand I wasn't looking at.</span>
-        <span class="ln">Anxious. Consistent. Still capped.</span>
-        <span class="gap-xs"></span>
-        <span class="ln">I knew Allah is Ar-Razzaq. I could quote the ayah on demand.</span>
-        <span class="ln">But I could not feel it. My chest was still running scarcity.</span>
-        <span class="gap-xs"></span>
-        <span class="ln">That gap — between what I knew and what I felt — was costing me everything.</span>
+  <div class="creator-card reveal">
+    <div class="creator-top">
+      <!-- PHOTO PLACEHOLDER: replace this div with
+           <img src="photo.jpg" alt="Imaad Deen" class="creator-avatar creator-photo">
+           when your photo is ready -->
+      <div class="creator-avatar">
+        <span class="creator-initials">ID</span>
       </div>
-      <div class="arc-bridge"><strong>The recognition:</strong> "I was not broke. I was blocked. And I had not yet found the language for the difference."</div>
+      <div>
+        <div class="creator-name">Imaad Deen</div>
+        <div class="creator-handle">@deensocial</div>
+      </div>
     </div>
-  </div>
 
-  <div class="arc-item reveal">
-    <div class="arc-marker">Turn</div>
-    <div>
-      <div class="arc-label">The Return — Finding the Door</div>
-      <h3 class="arc-h">Not a transformation.<br>A <em>remembrance.</em></h3>
-      <span class="ln">The shift was not information. It was recognition.</span>
-      <span class="ln">A Quran verse landed differently than it had every time before.</span>
-      <span class="ln">I stopped asking why provision wasn't coming.</span>
-      <span class="ln">I started asking what I was assuming about the One who sends it.</span>
-      <span class="gap-xs"></span>
-      <span class="ln">That question changed everything.</span>
-      <div class="arc-bridge"><strong>The realization:</strong> "The deen is not a constraint on what I can build. It is the blueprint for how to build it right."</div>
-    </div>
-  </div>
-
-  <div class="arc-item reveal" style="border-bottom:none; padding-bottom:0;">
-    <div class="arc-marker">Now</div>
-    <div>
-      <div class="arc-label">The Mission — Building in Public</div>
-      <h3 class="arc-h">The proof that <em>it moves.</em></h3>
-      <span class="ln">I am not teaching from the mountain.</span>
-      <span class="ln">I am building on the road — and documenting it.</span>
-      <span class="gap-xs"></span>
-      <span class="ln">This course is built from that discovery.</span>
-      <span class="ln">Not theory. Not what worked for me.</span>
-      <span class="ln strong">A map — seven laws, from the Quran and Sunnah — that describe exactly how provision flows and exactly what stops it.</span>
-      <div class="arc-bridge"><strong>The message:</strong> "I went first. Not because I had it all figured out. Because someone had to go. Now you know the road is real."</div>
-    </div>
+    <span class="ln">I spent years making du'a for more rizq while quietly blocking it myself.</span>
+    <span class="ln">Anxious. Working hard. Staying consistent. Still felt capped.</span>
+    <span class="gap-xs"></span>
+    <span class="ln">I knew Allah is Ar-Razzaq. I could quote the ayah.</span>
+    <span class="ln">But I could not feel it. My chest was still in scarcity.</span>
+    <span class="gap-xs"></span>
+    <span class="ln">When I stopped trying to learn more and started asking what I was assuming about Allah, something shifted.</span>
+    <span class="ln">The ceiling was not outside me. It was in how I thought about my Lord.</span>
+    <span class="gap-xs"></span>
+    <span class="ln">This course is built from that discovery.</span>
+    <span class="ln strong">For the brother who is tired of trying harder and landing in the same place.</span>
   </div>
 
 </div>
@@ -1494,7 +1405,7 @@ img { display: block; max-width: 100%; }
         I have bought Islamic courses before. They collect dust. Why is this different?
         <span class="faq-icon">&#9660;</span>
       </div>
-      <div class="faq-a">Most courses give you information to store in your head. This is a framework that works on your chest. Each law removes a specific layer — and they build on each other, so skipping is not an option. By the time you finish, you will not just know more. You will feel different. That feeling is the evidence.</div>
+      <div class="faq-a">Most courses give you information to store in your head. This is a framework that works on your chest. Each law removes a specific layer and they build on each other, so skipping is not an option. By the time you finish, you will not just know more. You will feel different. That feeling is the evidence.</div>
     </div>
 
     <div class="faq-item">
@@ -1502,15 +1413,15 @@ img { display: block; max-width: 100%; }
         I already pray five times, make du'a, and try to stay consistent. Do I need this?
         <span class="faq-icon">&#9660;</span>
       </div>
-      <div class="faq-a">That is the exact starting point this course is built for. The issue is not your worship. It is the invisible belief sitting between your worship and the flow of your rizq. Brothers who get the most from this course are already doing the right things externally — and still feel blocked. That is the gap this addresses.</div>
+      <div class="faq-a">That is the exact starting point this course is built for. The issue is not your worship. It is the invisible belief sitting between your worship and the flow of your rizq. Brothers who get the most from this course are already doing the right things externally and still feel blocked. That is the gap this addresses.</div>
     </div>
 
     <div class="faq-item">
       <div class="faq-q" onclick="toggleFaq(this.parentElement)">
-        Is this Quran and Sunnah — or is it law of attraction with Islamic language?
+        Is this Quran and Sunnah, or is it law of attraction with Islamic language?
         <span class="faq-icon">&#9660;</span>
       </div>
-      <div class="faq-a">Every law is drawn from Quran, Sunnah, and the lived example of the Prophets and Sahaba. Where modern language appears, it is used only to illuminate what Islam already teaches — never as a replacement for it. The foundation is aqeedah, not mindset.</div>
+      <div class="faq-a">Every law is drawn from Quran, Sunnah, and the lived example of the Prophets and Sahaba. Where modern language appears, it is used only to illuminate what Islam already teaches. Never as a replacement for it. The foundation is aqeedah, not mindset.</div>
     </div>
 
     <div class="faq-item">
@@ -1518,7 +1429,7 @@ img { display: block; max-width: 100%; }
         How much time does it take each day?
         <span class="faq-icon">&#9660;</span>
       </div>
-      <div class="faq-a">Each module is one sitting — around 45 to 60 minutes. The daily practices that follow take 10 to 15 minutes. You can move through the full course in a week. The shift you are looking for does not require more time on your calendar. It requires something to change inside your chest.</div>
+      <div class="faq-a">Each module is one sitting, around 45 to 60 minutes. The daily practices that follow take 10 to 15 minutes. You can move through the full course in a week. The shift you are looking for does not require more time on your calendar. It requires something to change inside your chest.</div>
     </div>
 
     <div class="faq-item">
@@ -1544,17 +1455,12 @@ img { display: block; max-width: 100%; }
     <div class="eyebrow">Investment</div>
   </div>
 
-  <div class="urgency-bar reveal">
-    <span>&#8987;</span>
-    <span>Founding price closes when this cohort fills. Price moves to $97 after that.</span>
-  </div>
-
   <div class="pricing-card reveal">
     <div class="pricing-eyebrow">Full Access &middot; One-Time Payment</div>
     <div class="price-big"><sup>$</sup>47</div>
     <div class="price-was">Regular price: <s>$97</s> &middot; You save: <strong>$50 today</strong></div>
     <ul class="includes">
-      <li><span class="chk">&#x2736;</span> Not Broke. Blocked. &mdash; all 7 laws, full access</li>
+      <li><span class="chk">&#x2736;</span> Not Broke. Blocked. &middot; all 7 laws, full access</li>
       <li><span class="chk">&#x2736;</span> Reflection workbook for each law</li>
       <li><span class="chk">&#x2736;</span> Daily practice guide</li>
       <li><span class="chk">&#x2736;</span> The Focus Economy <span class="bonus-tag">Bonus 01</span></li>
