@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Not Broke. Blocked. | The 7 Laws That Restore the Flow of Your Rizq</title>
+<meta name="description" content="A digital course for Muslim men who feel spiritually and financially stuck — despite doing everything right. The 7 Laws That Restore the Flow of Your Rizq.">
+
+<!-- ANALYTICS -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg:         #000000;
+    --surface:    #0D0D0D;
+    --card:       #141414;
+    --border:     #242424;
+    --border2:    #343434;
+    --gold:       #C49A3C;
+    --gold2:      #E8C46A;
+    --goldfade:   rgba(196,154,60,0.09);
+    --goldborder: rgba(196,154,60,0.22);
+    --text:       #F0EDE8;
+    --mid:        #C0BCB4;
+    --muted:      #6E6A64;
+    --faint:      #383430;
+    --red-bg:     rgba(160,60,40,0.07);
+    --red-br:     rgba(160,60,40,0.15);
+    --red-tx:     #B87868;
+    --green-bg:   rgba(80,148,100,0.07);
+    --green-br:   rgba(80,148,100,0.16);
+    --green-tx:   #80A890;
+    --tip-bg:     rgba(196,154,60,0.07);
+    --max-w:      580px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .main {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 20px 100px;
+  }
+
+  /* ---- UTILITY ---- */
+  .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+
+  .ln { display: block; font-size: 15px; color: var(--mid); line-height: 1.65; margin-bottom: 10px; font-weight: 300; }
+  .ln.strong { color: var(--text); font-weight: 400; }
+  .ln.accent { color: var(--gold); }
+  .ln.sm { font-size: 12.5px; color: var(--muted); }
+  .ln.serif { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-style: italic; font-weight: 300; color: var(--mid); }
+  .ln.serif.large { font-size: 24px; color: var(--text); }
+  .ln.serif.xl { font-size: 28px; color: var(--text); }
+
+  .gap-sm { display: block; height: 14px; }
+  .gap    { display: block; height: 24px; }
+  .gap-lg { display: block; height: 44px; }
+
+  /* ---- HERO ---- */
+  .hero { padding: 56px 0 36px; text-align: center; }
+
+  .badge {
+    display: inline-block;
+    background: var(--goldfade);
+    color: var(--gold);
+    border: 1px solid var(--goldborder);
+    font-size: 9.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(46px, 12vw, 64px);
+    font-weight: 300;
+    line-height: 0.95;
+    color: var(--text);
+    margin-bottom: 18px;
+    letter-spacing: -0.01em;
+  }
+  .hero h1 .gold { color: var(--gold); }
+
+  .hero-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--muted);
+    margin-bottom: 32px;
+  }
+
+  /* ---- CTA ---- */
+  .cta-primary {
+    display: inline-block;
+    background: var(--gold);
+    color: #000;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11.5px;
+    font-weight: 500;
+    padding: 14px 40px;
+    border-radius: 2px;
+    text-decoration: none;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    transition: background 0.2s, transform 0.15s;
+    border: none;
+    cursor: pointer;
+  }
+  .cta-primary:hover { background: var(--gold2); transform: translateY(-1px); }
+  .cta-primary.wide  { display: block; text-align: center; padding: 15px; }
+
+  .price-note { margin-top: 13px; font-size: 12px; color: var(--muted); }
+  .price-note s { color: var(--red-tx); }
+  .price-note strong { color: var(--green-tx); }
+
+  /* ---- PROOF BAR ---- */
+  .proof-bar {
+    display: flex;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .proof-item {
+    flex: 1;
+    text-align: center;
+    padding: 16px 8px;
+    border-right: 1px solid var(--border);
+  }
+  .proof-item:last-child { border-right: none; }
+  .proof-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .proof-label {
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  /* ---- SECTION TITLE ---- */
+  .s-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 4px;
+    line-height: 1.15;
+  }
+  .s-sub { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-weight: 300; }
+
+  /* ---- QURAN PULL ---- */
+  .quran-block {
+    border-left: 2px solid var(--goldborder);
+    padding: 18px 22px;
+    margin: 30px 0;
+    background: var(--goldfade);
+    border-radius: 0 3px 3px 0;
+  }
+  .quran-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--mid);
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  .quran-source {
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* ---- TRANSFORM VISUAL ---- */
+  .transform-visual {
+    background: var(--card);
+    border: 1px solid var(--border2);
+    border-radius: 4px;
+    padding: 26px 22px;
+    text-align: center;
+    margin: 28px 0;
+  }
+  .transform-label {
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+  .from-to {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .pill { padding: 9px 16px; border-radius: 3px; font-size: 13px; }
+  .pill.from { background: var(--red-bg); border: 1px solid var(--red-br); color: var(--red-tx); }
+  .pill.to   { background: var(--green-bg); border: 1px solid var(--green-br); color: var(--green-tx); }
+  .arrow { color: var(--faint); font-size: 16px; }
+  .transform-caption {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-style: italic;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  /* ---- TRIED LIST ---- */
+  .tried-list { display: flex; flex-direction: column; gap: 6px; margin: 20px 0; }
+  .tried-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 13px 15px;
+    font-size: 13px;
+    color: var(--mid);
+    font-weight: 300;
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+  }
+  .tried-x { color: var(--red-tx); font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+  .tried-item strong { color: var(--text); font-weight: 400; display: block; margin-bottom: 3px; }
+  .tried-item span { font-size: 12.5px; color: var(--muted); }
+
+  /* ---- BLOCKERS ---- */
+  .blockers { display: flex; flex-direction: column; gap: 6px; margin: 20px 0; }
+  .blocker-item {
+    background: var(--red-bg);
+    border: 1px solid var(--red-br);
+    border-radius: 3px;
+    padding: 12px 15px;
+    font-size: 13px;
+    color: var(--mid);
+    font-weight: 300;
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+  }
+  .bi-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    color: var(--red-tx);
+    flex-shrink: 0;
+    font-style: italic;
+  }
+
+  /* ---- SYSTEM CARD ---- */
+  .system-card {
+    background: var(--card);
+    border: 1px solid var(--border2);
+    border-radius: 4px;
+    padding: 28px 24px;
+    position: relative;
+    overflow: hidden;
+    margin: 24px 0;
+  }
+  .system-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .system-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .system-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--text);
+    margin-bottom: 14px;
+    line-height: 1.1;
+  }
+  .system-body {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  /* ---- 7 LAWS ---- */
+  .laws-heading {
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .laws-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin: 16px 0 28px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .law-item {
+    background: var(--surface);
+    padding: 14px 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+  .law-item:last-child { border-bottom: none; }
+  .law-item:hover { background: var(--card); }
+  .law-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    width: 42px;
+    padding-top: 2px;
+    opacity: 0.7;
+  }
+  .law-body { flex: 1; }
+  .law-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    color: var(--text);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 3px;
+  }
+  .law-sub {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  /* ---- WHAT'S INSIDE ---- */
+  .inside-list { display: flex; flex-direction: column; gap: 6px; margin: 16px 0; }
+  .inside-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 14px 17px;
+    font-size: 13px;
+    color: var(--mid);
+    font-weight: 300;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .inside-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    color: var(--faint);
+    font-style: italic;
+    flex-shrink: 0;
+    width: 16px;
+    padding-top: 1px;
+  }
+  .inside-item strong { color: var(--text); font-weight: 400; display: block; margin-bottom: 3px; }
+  .inside-item .inside-sub { font-size: 12.5px; color: var(--muted); }
+
+  /* ---- BONUS CARD ---- */
+  .bonus-card {
+    background: var(--card);
+    border: 1px solid var(--goldborder);
+    border-radius: 4px;
+    padding: 24px 22px;
+    position: relative;
+    overflow: hidden;
+    margin: 14px 0;
+  }
+  .bonus-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .bonus-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .bonus-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: var(--text);
+    margin-bottom: 9px;
+  }
+  .bonus-desc { font-size: 13px; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
+  .bonus-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .bonus-list li { font-size: 12.5px; color: var(--muted); display: flex; gap: 9px; line-height: 1.5; }
+  .bonus-list li::before { content: '✦'; color: var(--gold); font-size: 8px; margin-top: 4px; flex-shrink: 0; }
+
+  /* ---- CREATOR ---- */
+  .creator-card {
+    background: var(--card);
+    border: 1px solid var(--border2);
+    border-radius: 4px;
+    padding: 22px;
+    margin: 24px 0;
+  }
+  .creator-top { display: flex; gap: 15px; align-items: center; margin-bottom: 18px; }
+
+  /* PHOTO PLACEHOLDER — replace .creator-avatar img src with a real photo */
+  .creator-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1A1206, #332410);
+    border: 1px solid var(--goldborder);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    color: var(--gold);
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  /* When a real photo is added, add class="creator-avatar" to a 50x50 <img> element */
+
+  .creator-name { font-family: 'Cormorant Garamond', serif; font-size: 19px; color: var(--text); }
+  .creator-handle { font-size: 11.5px; color: var(--gold); margin-top: 3px; }
+
+  /* ---- FAQ ---- */
+  .faq-list { display: flex; flex-direction: column; gap: 4px; margin-top: 18px; }
+  .faq-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .faq-item.open { border-color: var(--border2); }
+  .faq-q {
+    padding: 14px 17px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 13.5px;
+    color: var(--mid);
+    user-select: none;
+    transition: color 0.2s;
+    line-height: 1.5;
+  }
+  .faq-q:hover, .faq-item.open .faq-q { color: var(--text); }
+  .faq-chevron {
+    font-size: 9px;
+    color: var(--faint);
+    transition: transform 0.2s, color 0.2s;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+  .faq-item.open .faq-chevron { transform: rotate(180deg); color: var(--gold); }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease, padding 0.2s;
+    padding: 0 17px;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.75;
+    border-top: 0 solid var(--border);
+    font-weight: 300;
+  }
+  .faq-item.open .faq-a {
+    max-height: 400px;
+    padding: 13px 17px 16px;
+    border-top-width: 1px;
+  }
+
+  /* ---- PRICING ---- */
+  .urgency-bar {
+    background: rgba(196,154,60,0.05);
+    border: 1px solid var(--goldborder);
+    border-radius: 3px;
+    padding: 11px 15px;
+    font-size: 12.5px;
+    color: #a89060;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    line-height: 1.5;
+  }
+  .pricing-card {
+    background: var(--card);
+    border: 1px solid var(--border2);
+    border-radius: 4px;
+    padding: 28px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .pricing-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .pricing-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+  .price-big {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 68px;
+    font-weight: 300;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .price-big sup { font-size: 24px; color: var(--muted); vertical-align: super; }
+  .price-was { font-size: 12.5px; color: var(--muted); margin-bottom: 24px; }
+  .price-was s { color: var(--red-tx); }
+  .price-was strong { color: var(--green-tx); }
+  .includes-list {
+    list-style: none;
+    text-align: left;
+    margin: 22px 0 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .includes-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    font-size: 13px;
+    color: var(--mid);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .includes-list li .chk { color: var(--gold); flex-shrink: 0; font-size: 10px; margin-top: 3px; }
+  .bonus-inline {
+    font-size: 8.5px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: var(--goldfade);
+    color: var(--gold);
+    border: 1px solid var(--goldborder);
+    padding: 1px 6px;
+    border-radius: 8px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  .guarantee-note {
+    margin-top: 14px;
+    font-size: 11px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .guarantee-block {
+    background: var(--green-bg);
+    border: 1px solid var(--green-br);
+    border-radius: 4px;
+    padding: 16px 18px;
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+    margin-top: 14px;
+  }
+  .guarantee-block h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: var(--green-tx);
+    margin-bottom: 4px;
+  }
+  .guarantee-block p { font-size: 12.5px; color: var(--muted); line-height: 1.65; }
+
+  /* ---- FINAL CTA ---- */
+  .final-cta { text-align: center; padding: 44px 0 24px; }
+  .final-cta h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(26px, 6vw, 34px);
+    font-weight: 300;
+    color: var(--text);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .final-cta h2 em { font-style: italic; color: var(--mid); }
+
+  /* ---- FOOTER ---- */
+  .site-footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 20px;
+    text-align: center;
+  }
+  .footer-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .footer-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: var(--mid);
+    font-weight: 400;
+  }
+  .footer-handle { font-size: 11.5px; color: var(--gold); }
+  .footer-copy { font-size: 10.5px; color: var(--muted); margin-top: 6px; }
+
+  /* ---- SCROLLBAR ---- */
+  ::-webkit-scrollbar { width: 3px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 2px; }
+
+  /* ---- RESPONSIVE ---- */
+  @media (max-width: 480px) {
+    body { font-size: 14px; }
+    .main { padding: 0 16px 80px; }
+    .hero { padding: 40px 0 28px; }
+    .hero h1 { font-size: clamp(40px, 12vw, 52px); }
+    .ln.serif.xl { font-size: 24px; }
+    .ln.serif.large { font-size: 20px; }
+    .s-title { font-size: 22px; }
+    .system-title { font-size: 24px; }
+    .price-big { font-size: 56px; }
+    .from-to { gap: 8px; }
+    .pill { font-size: 12px; padding: 8px 12px; }
+    .law-num { width: 36px; font-size: 10px; }
+    .law-name { font-size: 15px; }
+  }
+
+  @media (min-width: 640px) {
+    .main { padding: 0 32px 100px; }
+    .hero { padding: 72px 0 44px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="main">
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <div class="badge">✦ Founding Price &middot; First Cohort</div>
+    <h1>Not Broke<span class="gold">.</span><br>Blocked<span class="gold">.</span></h1>
+    <p class="hero-tagline">The 7 Laws That Restore the Flow of Your Rizq</p>
+    <span class="gap"></span>
+    <span class="ln serif large">You pray. You work. You wait.</span>
+    <span class="ln serif">So why does provision still feel out of reach?</span>
+    <span class="gap"></span>
+    <a href="[CHECKOUT_URL]" class="cta-primary">Yes, Show Me This &rarr;</a>
+    <p class="price-note">Founding price: <s>$97</s> &rarr; <strong>$47</strong> &middot; Instant access &middot; 7-day guarantee</p>
+  </div>
+
+  <!-- PROOF BAR -->
+  <div class="proof-bar">
+    <div class="proof-item">
+      <div class="proof-num">7</div>
+      <div class="proof-label">Laws</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-num">3</div>
+      <div class="proof-label">Source Texts</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-num">$47</div>
+      <div class="proof-label">Founding Price</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-num">7 Day</div>
+      <div class="proof-label">Guarantee</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== STORY ===== -->
+  <span class="ln serif xl">Let me tell you about a woman</span>
+  <span class="ln serif">who was left in a valley with nothing.</span>
+  <span class="gap-sm"></span>
+  <span class="ln">No water. No shelter. No other people.</span>
+  <span class="ln">Just open desert. And her infant son.</span>
+  <span class="gap"></span>
+  <span class="ln">Her name was Hajar.</span>
+  <span class="ln">Ibrahim AS had brought her there and set down what little they had.</span>
+  <span class="ln">Then he turned to leave.</span>
+  <span class="gap"></span>
+  <span class="ln">She called after him.</span>
+  <span class="ln">He kept walking.</span>
+  <span class="ln">She asked one question.</span>
+  <span class="gap-sm"></span>
+  <span class="ln strong">"Is this the command of Allah?"</span>
+  <span class="gap-sm"></span>
+  <span class="ln">He nodded.</span>
+  <span class="gap-sm"></span>
+  <span class="ln">She said: "Then He will not abandon us."</span>
+  <span class="gap"></span>
+  <span class="ln">And she ran.</span>
+  <span class="ln">Back and forth between two hills. Seven times.</span>
+  <span class="ln">Searching the horizon for any sign of water.</span>
+  <span class="gap"></span>
+  <span class="ln">The water did not come from where she was looking.</span>
+  <span class="ln">It did not come from the hills she was scanning.</span>
+  <span class="ln">It came from beneath the feet of her infant son.</span>
+  <span class="ln">Right where she had left him.</span>
+
+  <div class="quran-block">
+    <div class="quran-text">"And He provides for him from where he does not expect."</div>
+    <div class="quran-source">Surah At-Talaq &middot; 65:3</div>
+  </div>
+
+  <span class="ln">She was not given enough water for the journey.</span>
+  <span class="ln">She was given Zamzam.</span>
+  <span class="ln">A spring that has not stopped flowing in over four thousand years.</span>
+  <span class="gap"></span>
+  <span class="ln">Makkah does not exist without Zamzam.</span>
+  <span class="ln">Zamzam does not exist without Hajar.</span>
+  <span class="ln">And Hajar's provision did not come from where she was searching.</span>
+  <span class="gap"></span>
+  <span class="ln strong">That is what rizq actually is.</span>
+  <span class="ln">Not the deal that closes.</span>
+  <span class="ln">Not the number in your account.</span>
+  <span class="ln">The resource that arrives in the exact form you need, from the direction you were not expecting, in the moment it was always meant to reach you.</span>
+  <span class="gap"></span>
+  <span class="ln">Your provision is not lost.</span>
+  <span class="ln">Your job is not to find it.</span>
+  <span class="ln strong">Your job is to become the kind of person it can reach.</span>
+  <span class="gap-sm"></span>
+  <span class="ln">That same system is still running.</span>
+  <span class="ln">Right now. In the Quran. Waiting for you to align with it.</span>
+
+  <hr class="divider">
+
+  <!-- ===== PROBLEM ===== -->
+  <span class="ln serif large">Let me ask you something.</span>
+  <span class="ln serif">Be honest with yourself.</span>
+  <span class="gap-sm"></span>
+  <span class="ln">You pray. You work hard. You make du'a.</span>
+  <span class="ln">But there is still something tight in your chest.</span>
+  <span class="ln">A quiet feeling that rizq is right there, just out of reach.</span>
+  <span class="gap"></span>
+  <span class="ln">So you push harder. You try another course. You wake up earlier.</span>
+  <span class="ln">And still nothing changes.</span>
+  <span class="ln">You feel like you are running fast and going nowhere.</span>
+  <span class="gap"></span>
+  <span class="ln strong">If this sounds like you, I need you to hear something.</span>
+  <span class="ln">Nothing is wrong with you.</span>
+  <span class="ln">You are not being punished. You are not unlucky.</span>
+  <span class="ln">Allah has not forgotten you.</span>
+  <span class="gap-sm"></span>
+  <span class="ln">What is really happening is simpler than anyone has told you.</span>
+  <span class="gap"></span>
+  <span class="ln strong">You are living with what I call Rizq Resistance.</span>
+  <span class="ln">Hidden beliefs running in the background of your life.</span>
+  <span class="ln">Beliefs you did not choose. Planted long before you were aware.</span>
+  <span class="ln">Quietly blocking the provision Allah already wrote for you.</span>
+
+  <span class="gap"></span>
+
+  <div class="blockers">
+    <div class="blocker-item">
+      <span class="bi-num">01</span>
+      How you were taught to think about provision, and why that teaching is working against you
+    </div>
+    <div class="blocker-item">
+      <span class="bi-num">02</span>
+      A quiet conviction that you have not done enough to deserve more
+    </div>
+    <div class="blocker-item">
+      <span class="bi-num">03</span>
+      An assumption about Allah so subtle most men never catch it, yet it shapes everything they receive
+    </div>
+  </div>
+
+  <span class="gap-sm"></span>
+  <span class="ln">You cannot out-hustle a broken belief.</span>
+  <span class="ln">You cannot out-work a heart that secretly thinks Allah is withholding.</span>
+  <span class="ln">You cannot force open doors that only open through surrender.</span>
+
+  <hr class="divider">
+
+  <!-- ===== YOU'VE ALREADY TRIED ===== -->
+  <span class="ln serif large">You have already tried to fix this.</span>
+  <span class="gap-sm"></span>
+
+  <div class="tried-list">
+    <div class="tried-item">
+      <span class="tried-x">&#x2715;</span>
+      <div>
+        <strong>You tried working harder.</strong>
+        <span>More hours. More effort. More projects. But effort without alignment just creates burnout. Rizq was never about how much you push.</span>
+      </div>
+    </div>
+    <div class="tried-item">
+      <span class="tried-x">&#x2715;</span>
+      <div>
+        <strong>You tried learning more about Islam.</strong>
+        <span>You watched lectures. Read books. Followed scholars. But knowing Allah is Ar-Razzaq in your head is not the same as feeling it in your gut. That gap is where Rizq Resistance lives.</span>
+      </div>
+    </div>
+    <div class="tried-item">
+      <span class="tried-x">&#x2715;</span>
+      <div>
+        <strong>You tried making more du'a.</strong>
+        <span>Du'a is real. But du'a from a heart full of hidden fear is like planting seeds in bad soil. The issue is not the seed. It is what is underneath.</span>
+      </div>
+    </div>
+    <div class="tried-item">
+      <span class="tried-x">&#x2715;</span>
+      <div>
+        <strong>You tried hustle programs and productivity systems.</strong>
+        <span>None of them touched the real issue. Because the real issue is not tactics or strategy. It is what is happening inside your chest.</span>
+      </div>
+    </div>
+    <div class="tried-item">
+      <span class="tried-x">&#x2715;</span>
+      <div>
+        <strong>You tried "just trusting Allah", but your body would not listen.</strong>
+        <span>You told yourself to have tawakkul. You wanted to trust. But your chest stayed tight. Because tawakkul is not a thought. It is a state. And that state takes a process to enter.</span>
+      </div>
+    </div>
+  </div>
+
+  <span class="gap-sm"></span>
+  <span class="ln">None of these things are bad.</span>
+  <span class="ln">They just do not reach the root.</span>
+  <span class="ln strong">The root is Rizq Resistance. And once you fix it, provision does not just come.</span>
+  <span class="ln strong">It chases you.</span>
+
+  <hr class="divider">
+
+  <!-- ===== TRANSFORMATION ===== -->
+  <span class="ln strong">This is what changes when the resistance is gone.</span>
+
+  <div class="transform-visual">
+    <div class="transform-label">The shift this produces</div>
+    <div class="from-to">
+      <div class="pill from">Striving. Blocked. Exhausted.</div>
+      <div class="arrow">&rarr;</div>
+      <div class="pill to">Aligned. Trusting. Receiving.</div>
+    </div>
+    <div class="transform-caption">Not because you worked harder. Because you cleared what was in the way.</div>
+  </div>
+
+  <span class="ln">Hajar did not search her way to the water. She became the person it could reach.</span>
+  <span class="ln">Abdur-Rahman ibn Awf arrived in Madinah with nothing and became one of the wealthiest men in the city.</span>
+  <span class="ln">Not because of strategy. Because of alignment.</span>
+  <span class="ln">That system has not changed.</span>
+
+  <hr class="divider">
+
+  <!-- ===== THE SYSTEM ===== -->
+  <div class="system-card">
+    <div class="system-eyebrow">The Course</div>
+    <div class="system-title">Not Broke. Blocked.</div>
+    <p class="system-body">The Quran has an operating system for provision. Not a metaphor. A real system. Allah put laws into His creation that control how rizq flows, and how it gets blocked. These laws are as real as gravity. They do not play favourites. They do not bend for anyone. They just respond to one thing: alignment. This course teaches you that system.</p>
+  </div>
+
+  <!-- ===== THE 7 LAWS ===== -->
+  <span class="gap-sm"></span>
+  <div class="laws-heading">The 7 Laws &mdash; Full Architecture</div>
+  <div class="laws-grid">
+    <div class="law-item">
+      <span class="law-num">Law I</span>
+      <div class="law-body">
+        <div class="law-name">The Law of Source</div>
+        <div class="law-sub">Rizq comes from Allah, not through people. Misidentify the source and every action points the wrong way.</div>
+      </div>
+    </div>
+    <div class="law-item">
+      <span class="law-num">Law II</span>
+      <div class="law-body">
+        <div class="law-name">The Law of Gratitude as Currency</div>
+        <div class="law-sub">Ingratitude is the hidden tax on your rizq. Shukr is not a feeling &mdash; it is a mechanism built into creation.</div>
+      </div>
+    </div>
+    <div class="law-item">
+      <span class="law-num">Law III</span>
+      <div class="law-body">
+        <div class="law-name">The Law of Inner Architecture</div>
+        <div class="law-sub">Your outer reality reflects your inner blueprint. Change the blueprint; change what can reach you.</div>
+      </div>
+    </div>
+    <div class="law-item">
+      <span class="law-num">Law IV</span>
+      <div class="law-body">
+        <div class="law-name">The Law of Worthiness</div>
+        <div class="law-sub">Rizq flows to those who believe they deserve it. This is the law most men never examine &mdash; and never resolve.</div>
+      </div>
+    </div>
+    <div class="law-item">
+      <span class="law-num">Law V</span>
+      <div class="law-body">
+        <div class="law-name">The Law of Vibrational Alignment</div>
+        <div class="law-sub">You attract the frequency you embody. Your internal state is a signal. This law teaches you what that signal is broadcasting.</div>
+      </div>
+    </div>
+    <div class="law-item">
+      <span class="law-num">Law VI</span>
+      <div class="law-body">
+        <div class="law-name">The Law of Inspired Movement</div>
+        <div class="law-sub">Faith is the posture. Action is the proof. The Prophet Dawood model: full effort, no attachment to outcome.</div>
+      </div>
+    </div>
+    <div class="law-item">
+      <span class="law-num">Law VII</span>
+      <div class="law-body">
+        <div class="law-name">The Law of Barakah</div>
+        <div class="law-sub">The divine multiplier. Specific conditions attract it. Most men unknowingly create the opposite every single day.</div>
+      </div>
+    </div>
+  </div>
+  <span class="ln sm">Each law removes a layer. They work in sequence &mdash; you cannot skip ahead.</span>
+
+  <hr class="divider">
+
+  <!-- ===== WHAT'S INSIDE ===== -->
+  <span class="ln strong">Inside the course, you will learn to:</span>
+  <span class="gap-sm"></span>
+
+  <div class="inside-list">
+    <div class="inside-item">
+      <span class="inside-num">I</span>
+      <div>
+        <strong>Identify where your provision is being blocked</strong>
+        <span class="inside-sub">And why effort, du'a, and discipline alone have not been enough to move it</span>
+      </div>
+    </div>
+    <div class="inside-item">
+      <span class="inside-num">II</span>
+      <div>
+        <strong>Dissolve the hidden belief that is acting as a ceiling</strong>
+        <span class="inside-sub">Using the words of Allah Himself, not motivation, not affirmations</span>
+      </div>
+    </div>
+    <div class="inside-item">
+      <span class="inside-num">III</span>
+      <div>
+        <strong>Rebuild your assumption about Allah at the level that actually changes things</strong>
+        <span class="inside-sub">Most men know the right words. This takes it from your head to your chest</span>
+      </div>
+    </div>
+    <div class="inside-item">
+      <span class="inside-num">IV</span>
+      <div>
+        <strong>Take action the way Prophet Dawood did</strong>
+        <span class="inside-sub">Fully, without burnout, because you understand where your strength actually comes from</span>
+      </div>
+    </div>
+    <div class="inside-item">
+      <span class="inside-num">V</span>
+      <div>
+        <strong>Create the inner conditions that attract barakah</strong>
+        <span class="inside-sub">Barakah follows specific conditions. Most men unknowingly create the opposite every day</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== BONUSES ===== -->
+  <span class="ln strong">The course opens the door.</span>
+  <span class="ln">These two bonuses handle everything that comes after.</span>
+
+  <div class="bonus-card">
+    <div class="bonus-eyebrow">Bonus 01 &middot; Free with enrolment</div>
+    <div class="bonus-title">The Focus Economy</div>
+    <p class="bonus-desc">A practical guide for the Muslim man who wants to turn his clarity into income. Built around the One Person Business framework.</p>
+    <ul class="bonus-list">
+      <li>Six parts from identity to income architecture</li>
+      <li>Worksheets and action steps at each stage</li>
+      <li>30-day activation blueprint</li>
+      <li>Grounded in the same Islamic principles as the core course</li>
+    </ul>
+  </div>
+
+  <div class="bonus-card">
+    <div class="bonus-eyebrow">Bonus 02 &middot; Free with enrolment</div>
+    <div class="bonus-title">Private Community Access</div>
+    <p class="bonus-desc">A private space for brothers going through the course. Ask questions. Share what shifts. Stay accountable beyond the modules.</p>
+    <ul class="bonus-list">
+      <li>Direct access to Imaad and other members</li>
+      <li>Law-by-law discussion as you move through</li>
+      <li>Ongoing support that does not end when the course does</li>
+    </ul>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== CREATOR ===== -->
+  <span class="ln serif large">I know this works.</span>
+  <span class="ln serif">Because I lived the opposite.</span>
+  <span class="gap"></span>
+
+  <div class="creator-card">
+    <div class="creator-top">
+      <!-- PHOTO PLACEHOLDER: Replace this div with <img src="photo.jpg" alt="Imaad Deen" class="creator-avatar"> when your photo is ready -->
+      <div class="creator-avatar">ID</div>
+      <div>
+        <div class="creator-name">Imaad Deen</div>
+        <div class="creator-handle">@deensocial</div>
+      </div>
+    </div>
+    <span class="ln">I spent years making du'a for more rizq while quietly blocking it myself.</span>
+    <span class="ln">Anxious. Working hard. Staying consistent. Still felt capped.</span>
+    <span class="gap-sm"></span>
+    <span class="ln">I knew Allah is Ar-Razzaq. I could quote the ayah.</span>
+    <span class="ln">But I could not feel it. My nervous system was still stuck in panic mode.</span>
+    <span class="gap-sm"></span>
+    <span class="ln">When I stopped trying to learn more and started trying to realign instead, something shifted.</span>
+    <span class="ln">The ceiling was not outside me. It was in how I thought about Allah.</span>
+    <span class="gap-sm"></span>
+    <span class="ln">This course is built from that discovery.</span>
+    <span class="ln">For the brother who is tired of trying harder and landing in the same place.</span>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== FAQ ===== -->
+  <p class="s-title">Still thinking it over?</p>
+  <p class="s-sub">Let me answer what is probably on your mind.</p>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this.parentElement)">
+        I have bought Islamic courses before. They collect dust. How is this different?
+        <span class="faq-chevron">&#9660;</span>
+      </div>
+      <div class="faq-a">Most courses give you more information to stuff into your head. This is not that. It is a daily framework that works on your heart, not your notes. Each law builds on the one before it. By the time you finish, you will not just know more. You will feel different.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this.parentElement)">
+        I already pray five times a day and make du'a. Do I need this?
+        <span class="faq-chevron">&#9660;</span>
+      </div>
+      <div class="faq-a">That is the perfect starting point. The issue is not your effort or your worship. It is the invisible beliefs sitting between your effort and the flow of your rizq. This course clears those beliefs. Most of the brothers who benefit most are already doing the right things externally.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this.parentElement)">
+        Is this rooted in Quran and Sunnah or is it law of attraction content?
+        <span class="faq-chevron">&#9660;</span>
+      </div>
+      <div class="faq-a">Every law comes straight from Quran, Sunnah, and the lived example of the Prophets and Sahaba. Nothing is invented. Where modern frameworks appear, they are used only to illuminate what Islam already teaches. Never as a replacement for it.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this.parentElement)">
+        How much time does it take?
+        <span class="faq-chevron">&#9660;</span>
+      </div>
+      <div class="faq-a">Each module is one sitting, around 45 to 60 minutes. Daily practices take 10 to 15 minutes. You can go through the full course in a week. The shift you are looking for does not require more time on your calendar. It requires something to change inside you.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this.parentElement)">
+        What if nothing shifts for me?
+        <span class="faq-chevron">&#9660;</span>
+      </div>
+      <div class="faq-a">7-day full money-back guarantee. Go through the material. If nothing moves in how you see your rizq or your relationship with Allah, email once within 7 days and receive a full refund. No questions. No conditions.</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== PRICING ===== -->
+  <div class="urgency-bar">
+    <span>&#8987;</span>
+    <span>Founding price closes when this cohort fills. Price moves to $97.</span>
+  </div>
+
+  <div class="pricing-card">
+    <div class="pricing-eyebrow">Full Access &middot; One-Time Payment</div>
+    <div class="price-big"><sup>$</sup>47</div>
+    <div class="price-was">Regular price: <s>$97</s> &middot; You save: <strong>$50 (52% off)</strong></div>
+    <ul class="includes-list">
+      <li><span class="chk">&#x2736;</span> Not Broke. Blocked. &mdash; all 7 laws, full access</li>
+      <li><span class="chk">&#x2736;</span> Reflection workbook for each law</li>
+      <li><span class="chk">&#x2736;</span> Daily practice guide</li>
+      <li><span class="chk">&#x2736;</span> The Focus Economy <span class="bonus-inline">Bonus 01</span></li>
+      <li><span class="chk">&#x2736;</span> Private Community Access <span class="bonus-inline">Bonus 02</span></li>
+      <li><span class="chk">&#x2736;</span> Lifetime access and all future updates</li>
+      <li><span class="chk">&#x2736;</span> 7-day money-back guarantee</li>
+    </ul>
+    <a href="[CHECKOUT_URL]" class="cta-primary wide">
+      Yes, I Want This for $47 &rarr;
+    </a>
+    <p class="guarantee-note">&#128274; Secure checkout &middot; Instant delivery &middot; 7-day refund</p>
+  </div>
+
+  <div class="guarantee-block">
+    <div>
+      <h4>7-Day Money-Back Guarantee</h4>
+      <p>Go through the full course. If nothing shifts in how you see your rizq and your Lord, email once within 7 days. Full refund. No conditions.</p>
+    </div>
+  </div>
+
+  <!-- ===== FINAL CTA ===== -->
+  <div class="final-cta">
+    <h2>The rizq was never late.<br><em>The signal just was not clear.</em></h2>
+    <span class="gap"></span>
+    <span class="ln">Every day you stay blocked costs more than money.</span>
+    <span class="ln">It costs the peace of knowing Allah is providing.</span>
+    <span class="gap"></span>
+    <a href="[CHECKOUT_URL]" class="cta-primary" style="padding:14px 44px;">Yes, I Want This for $47 &rarr;</a>
+    <p class="price-note" style="margin-top:11px;">&#128274; Secure payment &middot; Instant access &middot; 7-day refund</p>
+  </div>
+
+</div><!-- /main -->
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-name">Imaad Deen</div>
+    <div class="footer-handle">@deensocial</div>
+    <div class="footer-copy">&copy; 2026 Imaad Deen. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(item) {
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  }
+</script>
+
+</body>
+</html>
