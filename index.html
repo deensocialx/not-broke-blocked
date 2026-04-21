@@ -31,11 +31,9 @@ fbq('track','ViewContent',{content_name:'Rizq Flow',content_category:'Digital Co
   --gold-dim:#8A6B28;
   --gold-pale:#E8D5A3;
   --gold-faint:rgba(196,154,60,0.06);
-  --gold-glow:rgba(196,154,60,0.12);
   --black:#000000;
   --surface:#0A0A0A;
   --surface-2:#111111;
-  --surface-3:#161616;
   --border:rgba(196,154,60,0.15);
   --border-mid:rgba(196,154,60,0.28);
   --border-strong:rgba(196,154,60,0.45);
@@ -62,39 +60,25 @@ body{
 }
 
 body::after{
-  content:'';
-  position:fixed;
-  inset:0;
+  content:'';position:fixed;inset:0;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
-  pointer-events:none;
-  z-index:9999;
+  pointer-events:none;z-index:9999;
 }
 
 /* TOP BAR */
 .top-bar{
-  background:var(--gold);
-  color:#000;
-  text-align:center;
-  padding:11px 20px;
-  font-family:var(--sans);
-  font-size:12px;
-  font-weight:600;
-  letter-spacing:0.07em;
+  background:var(--gold);color:#000;text-align:center;
+  padding:11px 20px;font-family:var(--sans);
+  font-size:12px;font-weight:600;letter-spacing:0.07em;
 }
 
 /* NAV */
 nav{
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:rgba(0,0,0,0.93);
-  backdrop-filter:blur(12px);
+  position:sticky;top:0;z-index:100;
+  background:rgba(0,0,0,0.93);backdrop-filter:blur(12px);
   border-bottom:1px solid var(--border);
-  padding:0 clamp(20px,5vw,60px);
-  height:56px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+  padding:0 clamp(20px,5vw,60px);height:56px;
+  display:flex;align-items:center;justify-content:space-between;
 }
 .nav-brand{font-family:var(--serif);font-size:15px;font-weight:500;color:var(--gold);letter-spacing:0.1em}
 .nav-cta{
@@ -108,7 +92,6 @@ nav{
 .wrap{max-width:var(--max-w);margin:0 auto;padding:0 clamp(20px,5vw,48px)}
 .wrap-wide{max-width:var(--max-w-wide);margin:0 auto;padding:0 clamp(20px,5vw,60px)}
 .section{padding:clamp(64px,10vw,120px) 0}
-.section-sm{padding:clamp(48px,8vw,80px) 0}
 
 /* EYEBROW */
 .eyebrow{
@@ -129,12 +112,9 @@ nav{
 
 /* HERO */
 .hero{
-  min-height:100svh;
-  display:grid;
-  grid-template-rows:1fr auto;
+  min-height:100svh;display:grid;grid-template-rows:1fr auto;
   padding:clamp(80px,12vw,140px) 0 clamp(60px,8vw,100px);
-  position:relative;
-  overflow:hidden;
+  position:relative;overflow:hidden;
 }
 .hero-glow{
   position:absolute;top:-20%;left:50%;transform:translateX(-50%);
@@ -144,13 +124,12 @@ nav{
 }
 .hero-inner{position:relative;z-index:1}
 .hero-kicker{
-  font-family:var(--sans);font-size:11px;font-weight:500;
-  letter-spacing:0.22em;text-transform:uppercase;
-  color:var(--text-muted);margin-bottom:clamp(20px,3vw,32px);
+  font-size:11px;font-weight:500;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--text-muted);
+  margin-bottom:clamp(20px,3vw,32px);
 }
 .hero-title{
-  font-family:var(--serif);
-  font-size:clamp(64px,14vw,130px);
+  font-family:var(--serif);font-size:clamp(64px,14vw,130px);
   font-weight:700;line-height:0.9;letter-spacing:-0.025em;
   color:var(--text-primary);margin-bottom:8px;
 }
@@ -159,7 +138,7 @@ nav{
 .hero-tag{
   font-family:var(--serif);font-size:clamp(16px,2.5vw,22px);
   font-style:italic;color:var(--text-muted);
-  margin-bottom:clamp(32px,5vw,56px);letter-spacing:0.02em;
+  margin-bottom:clamp(32px,5vw,56px);
 }
 
 /* HOOK BLOCK */
@@ -170,9 +149,8 @@ nav{
 }
 .hook-block p{
   font-family:var(--serif);font-size:clamp(17px,2.8vw,22px);
-  font-weight:400;line-height:1.6;color:var(--text-primary);margin-bottom:12px;
+  font-weight:400;line-height:1.65;color:var(--text-primary);
 }
-.hook-block p:last-child{margin-bottom:0}
 .hook-block em{color:var(--gold);font-style:italic}
 .hook-block strong{color:var(--gold-pale);font-weight:500}
 
@@ -193,8 +171,7 @@ nav{
 /* PROOF STRIP */
 .proof-strip{
   background:var(--surface);
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
   padding:clamp(24px,5vw,48px) 0;
 }
 .proof-grid{display:grid;grid-template-columns:repeat(3,1fr)}
@@ -204,7 +181,7 @@ nav{
 }
 .proof-item:last-child{border-right:none}
 .proof-num{
-  font-family:var(--serif);font-size:clamp(28px,6vw,56px);
+  font-family:var(--serif);font-size:clamp(28px,6vw,52px);
   font-weight:600;color:var(--gold);display:block;line-height:1;margin-bottom:6px;
 }
 .proof-lbl{font-size:clamp(9px,1.5vw,12px);color:var(--text-muted);letter-spacing:0.06em;text-transform:uppercase;line-height:1.4}
@@ -215,65 +192,55 @@ nav{
   .proof-num{font-size:36px;margin-bottom:0;flex-shrink:0;min-width:48px}
 }
 
+/* QUALIFIER SECTION */
+.qualifier-section{background:var(--surface)}
+.qualifier-list{
+  list-style:none;display:flex;flex-direction:column;gap:0;
+  border:1px solid var(--border);max-width:640px;
+}
+.qualifier-item{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:clamp(14px,2.5vw,20px) clamp(16px,3vw,28px);
+  border-bottom:1px solid var(--border);
+  font-size:clamp(14px,2vw,16px);color:var(--text-secondary);line-height:1.55;
+}
+.qualifier-item:last-child{border-bottom:none}
+.qualifier-mark{color:var(--gold);flex-shrink:0;margin-top:2px;font-size:12px}
+
 /* STORY SECTION */
 .story-section{background:var(--surface)}
-.story-grid{display:flex;flex-direction:column;gap:clamp(36px,6vw,56px)}
-@media(min-width:768px){
-  .story-grid{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:clamp(48px,7vw,96px)}
+.story-body p{
+  font-size:clamp(15px,2vw,17px);color:var(--text-secondary);
+  line-height:1.85;margin-bottom:16px;
 }
-/* Mobile: body reads first, pull quotes follow as punctuation */
-.story-body{order:1}
-.story-sticky{order:2;position:static}
-@media(min-width:768px){
-  .story-body{order:unset}
-  .story-sticky{order:unset;position:sticky;top:80px}
-}
-.pull-quote{border-left:2px solid var(--gold);padding:20px 0 20px 24px;margin:clamp(20px,4vw,44px) 0}
-.pull-quote:first-child{margin-top:0}
-.pull-quote p{
-  font-family:var(--serif);font-size:clamp(20px,3vw,27px);
-  font-style:italic;font-weight:300;line-height:1.5;color:var(--text-primary);
-}
-.pull-quote cite{
-  display:block;margin-top:10px;font-size:11px;
-  letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-style:normal;
-}
-.story-body p{font-size:clamp(15px,2vw,17px);color:var(--text-secondary);line-height:1.85;margin-bottom:20px}
 .story-body p:last-child{margin-bottom:0}
 .story-body strong{color:var(--text-primary);font-weight:500}
 .story-body em{color:var(--gold);font-style:italic}
 
-/* FOUNDER ARC */
-.founder-arc{display:flex;flex-direction:column}
-.arc-step{
-  display:grid;grid-template-columns:48px 1fr;gap:0 24px;
-  padding-bottom:clamp(32px,5vw,56px);position:relative;
+/* PULL QUOTE — inline within story */
+.pull-quote{
+  border-left:2px solid var(--gold);
+  padding:18px 0 18px 24px;
+  margin:clamp(24px,4vw,36px) 0;
 }
-.arc-step::before{
-  content:'';position:absolute;left:16px;top:20px;bottom:0;
-  width:1px;background:var(--border);
+.pull-quote p{
+  font-family:var(--serif);font-size:clamp(19px,3vw,26px);
+  font-style:italic;font-weight:300;line-height:1.5;color:var(--text-primary);
 }
-.arc-step:last-child::before{display:none}
-.arc-marker{display:flex;flex-direction:column;align-items:center;padding-top:4px;z-index:1}
-.arc-dot{
-  width:10px;height:10px;border-radius:50%;background:var(--gold);
-  flex-shrink:0;box-shadow:0 0 12px rgba(196,154,60,0.4);
+.pull-quote cite{
+  display:block;margin-top:8px;font-size:11px;
+  letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-style:normal;
 }
-.arc-label{
-  font-size:9px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;
-  color:var(--gold);writing-mode:vertical-rl;text-orientation:mixed;
-  transform:rotate(180deg);margin-top:8px;
+
+/* FOUNDER */
+.founder-quotes{
+  display:flex;flex-direction:column;gap:12px;
+  margin-top:clamp(32px,5vw,48px);max-width:640px;
 }
-.arc-content h3{
-  font-family:var(--serif);font-size:clamp(20px,3vw,26px);
-  font-weight:500;color:var(--text-primary);line-height:1.25;margin-bottom:12px;
-}
-.arc-content h3 em{color:var(--gold);font-style:italic}
-.arc-content p{font-size:clamp(14px,1.8vw,16px);color:var(--text-secondary);line-height:1.8;margin-bottom:12px}
-.arc-bridge{
+.founder-quote{
   display:block;background:var(--gold-faint);border:1px solid var(--border-mid);
-  padding:14px 18px;font-family:var(--serif);font-size:clamp(14px,2vw,17px);
-  font-style:italic;color:var(--text-primary);line-height:1.55;margin-top:8px;
+  padding:14px 18px;font-family:var(--serif);font-size:clamp(15px,2vw,18px);
+  font-style:italic;color:var(--text-primary);line-height:1.55;
 }
 
 /* QURAN BLOCK */
@@ -324,12 +291,11 @@ nav{
 
 /* BONUS */
 .bonus-section{background:var(--surface)}
-.bonus-header{text-align:center;margin-bottom:clamp(40px,6vw,64px)}
-.bonus-cards{display:grid;grid-template-columns:1fr;gap:16px}
-@media(min-width:768px){.bonus-cards{grid-template-columns:repeat(3,1fr)}}
+.bonus-header{margin-bottom:clamp(40px,6vw,64px)}
+.bonus-cards{display:flex;flex-direction:column;gap:16px}
 .bonus-card{
   background:var(--black);border:1px solid var(--border-mid);
-  padding:clamp(28px,4vw,40px) clamp(20px,3vw,32px);
+  padding:clamp(24px,4vw,40px) clamp(20px,3vw,32px);
   position:relative;transition:border-color 0.2s;
 }
 .bonus-card:hover{border-color:var(--border-strong)}
@@ -340,18 +306,18 @@ nav{
 .bonus-badge{
   display:inline-block;background:var(--gold);color:#000;
   font-size:9px;font-weight:700;letter-spacing:0.18em;
-  text-transform:uppercase;padding:4px 10px;margin-bottom:20px;
+  text-transform:uppercase;padding:4px 10px;margin-bottom:16px;
 }
-.bonus-num{font-family:var(--serif);font-size:48px;font-weight:600;color:rgba(196,154,60,0.12);line-height:1;margin-bottom:8px}
-.bonus-title{font-family:var(--serif);font-size:clamp(20px,3vw,26px);font-weight:500;color:var(--text-primary);line-height:1.25;margin-bottom:12px}
+.bonus-title{font-family:var(--serif);font-size:clamp(20px,3vw,26px);font-weight:500;color:var(--text-primary);line-height:1.25;margin-bottom:10px}
 .bonus-title em{color:var(--gold);font-style:italic}
 .bonus-desc{font-size:clamp(13px,1.8vw,15px);color:var(--text-secondary);line-height:1.7}
 
 /* PRICING */
 .pricing-section{background:var(--black)}
-.pricing-layout{display:grid;grid-template-columns:1fr;gap:clamp(40px,6vw,80px);align-items:start}
-@media(min-width:860px){.pricing-layout{grid-template-columns:1fr 420px}}
-.pricing-card{background:var(--surface);border:1px solid var(--border-strong);position:relative;overflow:hidden}
+.pricing-card{
+  background:var(--surface);border:1px solid var(--border-strong);
+  position:relative;overflow:hidden;max-width:680px;
+}
 .pricing-card::before{
   content:'';position:absolute;top:0;left:0;right:0;height:3px;
   background:linear-gradient(to right,transparent 0%,var(--gold) 40%,var(--gold) 60%,transparent 100%);
@@ -363,49 +329,62 @@ nav{
   text-transform:uppercase;padding:5px 12px;margin-bottom:24px;
 }
 .pricing-title{font-family:var(--serif);font-size:clamp(24px,4vw,34px);font-weight:500;color:var(--text-primary);margin-bottom:6px;line-height:1.2}
-.pricing-subtitle{font-family:var(--serif);font-size:15px;font-style:italic;color:var(--text-muted);margin-bottom:32px}
+.pricing-subtitle{font-family:var(--serif);font-size:15px;font-style:italic;color:var(--text-muted);margin-bottom:24px}
+.price-anchor{font-family:var(--serif);font-size:clamp(14px,2vw,16px);font-style:italic;color:var(--text-muted);margin-bottom:20px}
 .price-row{display:flex;align-items:baseline;gap:16px;margin-bottom:6px}
 .price-now{font-family:var(--serif);font-size:clamp(56px,9vw,80px);font-weight:700;color:var(--gold);line-height:1}
 .price-was{font-family:var(--serif);font-size:28px;font-weight:400;color:var(--text-muted);text-decoration:line-through}
 .price-saving{font-size:12px;color:var(--text-secondary);margin-bottom:32px}
 .price-saving strong{color:#e05c4a}
-.checklist{list-style:none;margin-bottom:32px;border-top:1px solid var(--border)}
+.checklist{list-style:none;margin-bottom:28px;border-top:1px solid var(--border)}
 .checklist li{
   display:flex;align-items:flex-start;gap:14px;
   padding:13px 0;border-bottom:1px solid var(--border);
   font-size:clamp(13px,1.8vw,15px);color:var(--text-secondary);line-height:1.5;
 }
 .check-mark{color:var(--gold);font-size:13px;margin-top:2px;flex-shrink:0}
+
+/* GUARANTEE — above button */
 .guarantee-block{
   background:var(--gold-faint);border:1px solid var(--border-mid);
   padding:clamp(20px,3vw,28px);display:flex;gap:16px;
-  align-items:flex-start;margin-top:16px;
+  align-items:flex-start;margin-bottom:20px;
 }
 .shield-icon{font-size:28px;flex-shrink:0;line-height:1}
 .guarantee-title{font-family:var(--serif);font-size:clamp(16px,2vw,19px);font-weight:500;color:var(--text-primary);margin-bottom:6px}
 .guarantee-text{font-size:13px;color:var(--text-secondary);line-height:1.65}
 
-/* PRICING ASIDE */
-.pricing-aside{display:flex;flex-direction:column;gap:clamp(24px,3vw,32px)}
-.aside-block{border:1px solid var(--border);padding:clamp(20px,3vw,32px);background:var(--surface)}
-.aside-label{font-size:10px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
-.aside-text{font-family:var(--serif);font-size:clamp(16px,2.2vw,20px);font-style:italic;color:var(--text-secondary);line-height:1.6}
-.aside-text strong{color:var(--text-primary);font-style:normal;font-weight:500}
-
-/* FAQ */
-.faq-section{background:var(--surface)}
-.faq-grid{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--border)}
-@media(min-width:768px){.faq-grid{grid-template-columns:repeat(2,1fr)}}
-/* Mobile: single column — no right border needed */
-.faq-item{border-bottom:1px solid var(--border);border-right:none}
-@media(min-width:768px){
-  .faq-item{border-right:1px solid var(--border)}
-  .faq-item:nth-child(2n){border-right:none}
-  .faq-item:nth-last-child(-n+2){border-bottom:none}
+/* PRICING CONTEXT BLOCKS (below card) */
+.pricing-context{
+  display:flex;flex-direction:column;gap:0;
+  border:1px solid var(--border);
+  max-width:680px;margin-top:clamp(32px,5vw,52px);
 }
+.context-block{
+  padding:clamp(20px,3vw,28px) clamp(20px,3vw,32px);
+  border-bottom:1px solid var(--border);
+}
+.context-block:last-child{border-bottom:none}
+.context-label{
+  font-size:10px;font-weight:600;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:10px;
+}
+.context-text{
+  font-family:var(--serif);font-size:clamp(15px,2.2vw,18px);
+  font-style:italic;color:var(--text-secondary);line-height:1.6;
+}
+.context-text strong{color:var(--text-primary);font-style:normal;font-weight:500}
+
+/* FAQ — single column always */
+.faq-section{background:var(--surface)}
+.faq-grid{
+  display:flex;flex-direction:column;
+  border:1px solid var(--border);
+}
+.faq-item{border-bottom:1px solid var(--border)}
 .faq-item:last-child{border-bottom:none}
 .faq-btn{
-  width:100%;background:none;border:none;padding:clamp(18px,3vw,28px);
+  width:100%;background:none;border:none;padding:clamp(18px,3vw,24px);
   text-align:left;font-family:var(--serif);font-size:clamp(16px,2.2vw,19px);
   font-weight:400;color:var(--text-primary);cursor:pointer;
   display:flex;justify-content:space-between;align-items:center;
@@ -414,7 +393,7 @@ nav{
 .faq-icon{color:var(--gold);font-size:22px;flex-shrink:0;transition:transform 0.25s;font-style:normal;line-height:1}
 .faq-item.open .faq-icon{transform:rotate(45deg)}
 .faq-answer{
-  display:none;padding:0 clamp(18px,3vw,28px) clamp(18px,3vw,28px);
+  display:none;padding:0 clamp(18px,3vw,24px) clamp(18px,3vw,24px);
   font-size:clamp(13px,1.8vw,15px);color:var(--text-secondary);line-height:1.75;
 }
 .faq-item.open .faq-answer{display:block}
@@ -426,7 +405,10 @@ nav{
   background:radial-gradient(ellipse at 50% 100%,rgba(196,154,60,0.08) 0%,transparent 60%);
   pointer-events:none;
 }
-.final-title{font-family:var(--serif);font-size:clamp(36px,7vw,72px);font-weight:500;line-height:1.1;margin-bottom:clamp(16px,2vw,24px);color:var(--text-primary)}
+.final-title{
+  font-family:var(--serif);font-size:clamp(36px,7vw,72px);
+  font-weight:500;line-height:1.1;margin-bottom:clamp(16px,2vw,24px);color:var(--text-primary);
+}
 .final-title em{color:var(--gold);font-style:italic}
 .final-sub{
   font-family:var(--serif);font-size:clamp(17px,2.5vw,23px);font-style:italic;
@@ -434,6 +416,14 @@ nav{
   max-width:560px;margin-left:auto;margin-right:auto;line-height:1.5;
 }
 .final-btn-group{display:flex;flex-direction:column;align-items:center;gap:12px;max-width:400px;margin:0 auto}
+
+/* P.S. */
+.ps-block{
+  max-width:560px;margin:clamp(40px,6vw,64px) auto 0;
+  font-family:var(--serif);font-size:clamp(15px,2vw,18px);
+  font-style:italic;color:var(--text-muted);line-height:1.7;text-align:center;
+}
+.ps-block strong{color:var(--text-secondary);font-style:normal}
 
 /* FOOTER */
 footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-align:center}
@@ -465,7 +455,7 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
   cursor:pointer;text-align:center;text-decoration:none;display:block;
 }
 
-/* BIG STATEMENT */
+/* STATEMENT */
 .statement{text-align:center;padding:clamp(64px,10vw,120px) 0}
 .statement-text{
   font-family:var(--serif);font-size:clamp(28px,5vw,52px);
@@ -488,13 +478,18 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
 
 <!-- TOP BAR -->
 <div class="top-bar">
-  Founding Price: <strong>$27</strong> &ndash; Rises to $47 When This Page Closes
+  Founding Price: <strong>$27</strong> &ndash; Rising to $47 This Week
 </div>
 
 <!-- NAV -->
 <nav>
   <div class="nav-brand">Rizq Flow</div>
-  <a href="#pricing" class="nav-cta">Get Access &ndash; $27</a>
+  <a href="https://buy.stripe.com/3cI14n243dgZ9VPd5ybII00"
+     target="_blank" rel="noopener noreferrer"
+     class="nav-cta"
+     onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'USD'})">
+    Get Instant Access &ndash; $27
+  </a>
 </nav>
 
 <!-- HERO -->
@@ -512,13 +507,16 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
     <p class="hero-tag animate-in d3">The Muslim Man's Path To Divine Provision</p>
 
     <div class="hook-block animate-in d4">
-      <p>There is a man who works hard, makes du'a, has good intentions, loves his deen. And still watches nothing move. <em>That man is not lazy. He is not faithless. He is not being punished.</em></p>
-      <p><strong>He is blocked. And the block is not where he thinks it is.</strong></p>
-      <p>Somewhere between the deen he inherited and the life he is living, a door was closed. Not by Allah. By the fears, limiting beliefs, and false convictions quietly installed in him before he had the language to question them. This course finds that door. Opens it. And shows him what has been waiting on the other side.</p>
+      <p>There is a man who works hard, makes du'a, loves his deen &mdash; and still watches nothing move. He is not lazy. He is not faithless. He is not being punished. <strong>He is blocked. And the block is not where he thinks it is.</strong></p>
     </div>
 
     <div class="hero-cta-group animate-in d5">
-      <a href="#pricing" class="btn-primary">Open My Rizq Flow &ndash; $27</a>
+      <a href="https://buy.stripe.com/3cI14n243dgZ9VPd5ybII00"
+         target="_blank" rel="noopener noreferrer"
+         class="btn-primary"
+         onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'USD'})">
+        Get Instant Access &ndash; $27
+      </a>
       <p class="btn-note">Founding price &middot; Rises to $47 &middot; 7-Day Money Back Guarantee</p>
     </div>
 
@@ -538,42 +536,76 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
         <span class="proof-lbl">Bonuses<br>Included Free</span>
       </div>
       <div class="proof-item">
-        <span class="proof-num">0</span>
-        <span class="proof-lbl">Risk<br>7-Day Guarantee</span>
+        <span class="proof-num">7-Day</span>
+        <span class="proof-lbl">Money Back<br>Guarantee</span>
       </div>
     </div>
   </div>
 </div>
 
+<!-- IS THIS FOR YOU? -->
+<section class="section-sm qualifier-section">
+  <div class="wrap">
+    <div class="eyebrow">Read This First</div>
+    <h2 class="h2" style="margin-bottom:clamp(24px,4vw,36px)">This is for you <em>if&hellip;</em></h2>
+    <ul class="qualifier-list">
+      <li class="qualifier-item">
+        <span class="qualifier-mark">&#10022;</span>
+        You make du'a for rizq sincerely &mdash; and still feel like nothing is moving
+      </li>
+      <li class="qualifier-item">
+        <span class="qualifier-mark">&#10022;</span>
+        You work hard but the effort never seems to match the results
+      </li>
+      <li class="qualifier-item">
+        <span class="qualifier-mark">&#10022;</span>
+        Barakah feels like something that reaches other men, not you
+      </li>
+      <li class="qualifier-item">
+        <span class="qualifier-mark">&#10022;</span>
+        You know what the Quran says about provision &mdash; but you can't feel it working in your actual life
+      </li>
+      <li class="qualifier-item">
+        <span class="qualifier-mark">&#10022;</span>
+        You're done waiting for the outer world to change before you start moving
+      </li>
+    </ul>
+  </div>
+</section>
+
 <!-- THE STORY -->
 <section class="section story-section">
   <div class="wrap">
     <div class="eyebrow">You Already Know This Story</div>
-    <h2 class="h1" style="margin-bottom:clamp(40px,6vw,64px)">Let me tell you about<br><em>the man I built this for.</em></h2>
+    <h2 class="h1" style="margin-bottom:clamp(36px,6vw,56px)">The man I built<br><em>this for.</em></h2>
 
-    <div class="story-grid">
-      <div class="story-sticky">
-        <div class="pull-quote">
-          <p>"I'm working on something. I just need to sort out a few things first."</p>
-          <cite>What he tells people</cite>
-        </div>
-        <div class="pull-quote">
-          <p>"Maybe I'm not the type of person this works for. Maybe I've wasted too much time."</p>
-          <cite>What he tells himself at 2am</cite>
-        </div>
+    <div class="story-body">
+      <p>He wakes up with intention.</p>
+      <p>He goes to sleep having consumed instead.</p>
+      <p>Not because he's weak. Not because he doesn't care.</p>
+
+      <div class="pull-quote">
+        <p>"I'm working on something. I just need to sort a few things first."</p>
+        <cite>What he tells people</cite>
       </div>
 
-      <div class="story-body">
-        <p>He wakes up with the intention to build. He goes to sleep having consumed instead. Not because he is weak. Not because he doesn't care. Because something in him is <em>running a different program</em>, one that was installed long before he had any say in the matter.</p>
+      <p>Because something in him is <em>running a different program.</em></p>
+      <p>One installed long before he had any say in it.</p>
+      <p>He makes du'a for rizq. Sincerely. He knows Allah is Al-Razzaq. He knows provision is decreed.</p>
+      <p>And still &mdash; deep in his chest &mdash; there is a whisper: <em>others get the barakah. I get the struggle.</em></p>
+      <p>He works harder to compensate. More hours. More hustle.</p>
+      <p>The money doesn't reflect it. The opportunities don't multiply.</p>
 
-        <p>He watches other men building online. He sees the courses, the income screenshots, the freedom. He feels two things simultaneously: <strong>the hunger to do the same, and a quiet, unnamed conviction that it won't work for him.</strong> He doesn't say that out loud. But it's there, every time he hovers over the "start" button and closes the tab instead.</p>
-
-        <p>He makes du'a for rizq. Sincerely. He knows Allah is Al-Razzaq. He knows provision is decreed. And still, deep in his chest, at a level below theology, there is a whisper: <em>others get the barakah. I get the struggle.</em></p>
-
-        <p>He works harder to compensate. More hours. More effort. More hustle. The money doesn't reflect it. The opportunities don't multiply. And slowly, without realizing it, he begins to mistake <strong>the block for his identity.</strong> He doesn't see it as something installed in him. He sees it as something he is.</p>
-
-        <p>That is the most dangerous moment. When a man stops fighting the cage and starts decorating it.</p>
+      <div class="pull-quote">
+        <p>"Maybe I'm not the type of person this works for."</p>
+        <cite>What he tells himself at 2am</cite>
       </div>
+
+      <p>And slowly, without realizing it, he begins to mistake <strong>the block for his identity.</strong></p>
+      <p>He doesn't see it as something installed in him.</p>
+      <p>He sees it as something he <em>is.</em></p>
+      <p>That is the most dangerous moment.</p>
+      <p>When a man stops fighting the cage and starts decorating it.</p>
     </div>
   </div>
 </section>
@@ -591,30 +623,26 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
 <section class="section" style="background:var(--surface-2)">
   <div class="wrap">
     <div class="eyebrow">The Hidden Truth</div>
-    <h2 class="h1" style="margin-bottom:clamp(32px,5vw,52px)">Islamic scholars documented<br>this <em>centuries ago.</em></h2>
+    <h2 class="h1" style="margin-bottom:clamp(32px,5vw,48px)">The answer was always<br><em>in the deen.</em></h2>
 
-    <div style="max-width:720px">
-      <p class="body" style="margin-bottom:20px">
-        Hidden inside the Quran, the Sunnah, and centuries of Islamic scholarship is a precise, documented understanding of why a man's provision flows freely for some and stays sealed for others. <strong>It was never mystical. It was always mechanical.</strong>
-      </p>
-      <p class="body" style="margin-bottom:20px">
-        The scholars knew that rizq is not blocked by circumstances. It is blocked by inner architecture. By the condition of the qalb. By what a man believes, at a level below what he can articulate, about what he deserves, what is possible for him, and what Allah's provision means for a man like him specifically.
-      </p>
-      <p class="body" style="margin-bottom:32px">
-        <em>This teaching did not disappear. It was buried.</em> Buried under generations of generic self-help content dressed in Islamic language. Buried under the noise of productivity culture and hustle frameworks that have nothing to say to a man who answers to Allah. Buried until now.
-      </p>
+    <div style="max-width:680px">
+      <p class="body" style="margin-bottom:16px">The Quran and the Sunnah contain a precise, documented understanding of why a man's provision flows for some and stays sealed for others.</p>
+      <p class="body" style="margin-bottom:16px"><strong>It was never mystical. It was always mechanical.</strong></p>
+      <p class="body" style="margin-bottom:16px">The scholars knew rizq is not blocked by circumstances.</p>
+      <p class="body" style="margin-bottom:16px">It is blocked by inner architecture. By the condition of the qalb. By what a man believes &mdash; at a level below what he can articulate &mdash; about what he deserves and what is possible for him.</p>
+      <p class="body" style="margin-bottom:32px"><em>This teaching was never lost. It was buried.</em> Buried under self-help dressed in Islamic language. Buried under hustle frameworks that have nothing to say to a man who answers to Allah. Buried until now.</p>
     </div>
 
-    <div class="quran-block" style="max-width:720px">
+    <div class="quran-block" style="max-width:680px">
       <div class="quran-arabic">وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ</div>
       <p class="quran-translation">"Whoever fears Allah, He will make a way out for him, and provide for him from sources he could never have imagined."</p>
       <p class="quran-ref">Surah At-Talaq &middot; 65:2&ndash;3</p>
     </div>
 
-    <div style="max-width:720px;margin-top:clamp(32px,5vw,52px)">
-      <p class="body">
-        The way out <em>already exists.</em> The provision already has a source. The only question is: <strong>what inner condition is blocking the path between you and what was always decreed for you?</strong> Rizq Flow is the precise, law-by-law answer to that question.
-      </p>
+    <div style="max-width:680px;margin-top:clamp(32px,5vw,48px)">
+      <p class="body" style="margin-bottom:12px">The way out <em>already exists.</em></p>
+      <p class="body">The only question is: <strong>what inner condition is blocking the path between you and what was always decreed for you?</strong></p>
+      <p class="body" style="margin-top:12px">Rizq Flow is the precise, law-by-law answer to that question.</p>
     </div>
   </div>
 </section>
@@ -623,53 +651,18 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
 <section class="section" style="background:var(--black)">
   <div class="wrap">
     <div class="eyebrow">Who Imaad Deen Is</div>
-    <h2 class="h1" style="margin-bottom:clamp(40px,6vw,64px)">The man who went first<br><em>is already you.</em></h2>
+    <h2 class="h1" style="margin-bottom:clamp(28px,5vw,44px)">The man who went first<br><em>is already you.</em></h2>
 
-    <div style="max-width:680px;margin-bottom:clamp(40px,6vw,64px)">
-      <p class="body">Imaad is not a scholar looking down from a position of lifelong righteousness. He is a man who ran the defaults. Who was inside the system. Who paid the cost. And who found the way back, and is still finding it. <strong>That is the only voice that earns the right to say what this course says.</strong> Not perfection. Return.</p>
+    <div style="max-width:640px">
+      <p class="body" style="margin-bottom:12px">Imaad is not a scholar looking down from lifelong righteousness.</p>
+      <p class="body" style="margin-bottom:12px">He is a man who ran the defaults. Who was inside the system. Who paid the cost. And who found the way back &mdash; and is still finding it.</p>
+      <p class="body"><strong>Not perfection. Return. That is the only voice that earns the right to say what this course says.</strong></p>
     </div>
 
-    <div class="founder-arc">
-
-      <div class="arc-step">
-        <div class="arc-marker">
-          <div class="arc-dot"></div>
-          <div class="arc-label">Then</div>
-        </div>
-        <div class="arc-content">
-          <h3>A man shaped by <em>the system.</em></h3>
-          <p>The riba system. The ghaflah system. The conditioning to produce and comply. The drift from fitrah that happens slowly and then all at once. The job that pays enough to stay. The scroll that fills the silence. The distance from the deen that grows in millimeters, not miles.</p>
-          <p>The rizq that feels uncertain no matter how much work gets done. The gnawing sense of being made for something more specific than this.</p>
-          <div class="arc-bridge">"I was not broke. I was blocked. And I didn't have the language for it."</div>
-        </div>
-      </div>
-
-      <div class="arc-step">
-        <div class="arc-marker">
-          <div class="arc-dot"></div>
-          <div class="arc-label">Turn</div>
-        </div>
-        <div class="arc-content">
-          <h3>Not a transformation.<br><em>A remembrance.</em></h3>
-          <p>The Quran verse that lands differently at 3am than it did in Sunday school. The realization that tawakkul is not passivity, it is the most active thing a man can do. The moment the language of the deen stops being inherited and starts being lived.</p>
-          <p>The decision to build something of his own. Not because it was guaranteed. Because the alternative, staying inside the system, deferring the khalifah role indefinitely, was no longer acceptable.</p>
-          <div class="arc-bridge">"The deen isn't a constraint on what I can build. It's the blueprint for how to build it right."</div>
-        </div>
-      </div>
-
-      <div class="arc-step">
-        <div class="arc-marker">
-          <div class="arc-dot"></div>
-          <div class="arc-label">Now</div>
-        </div>
-        <div class="arc-content">
-          <h3>Building on the road.<br><em>Documenting it.</em></h3>
-          <p>@deensocial is not a content account. It is a living record of what the return looks like in real time. The wins, the setbacks, the products, the doubts, the du'as, the breakthroughs. Every piece of content is both teaching and testimony.</p>
-          <p>Imaad is not teaching from the mountain. He is building on the road, far enough ahead to point the way, honest enough to say where the work is still ongoing.</p>
-          <div class="arc-bridge">"I went first. Not because I had it figured out. Because someone had to. The road is real. Come."</div>
-        </div>
-      </div>
-
+    <div class="founder-quotes">
+      <span class="founder-quote">"I was not broke. I was blocked. I just didn't have the language for it."</span>
+      <span class="founder-quote">"The deen isn't a constraint on what I can build. It's the blueprint for how to build it right."</span>
+      <span class="founder-quote">"I went first. Not because I had it figured out. Because someone had to. The road is real. Come."</span>
     </div>
   </div>
 </section>
@@ -717,13 +710,13 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
       <div class="module-card">
         <div class="module-num">Law 06</div>
         <div class="module-title">The Law of Inspired Movement</div>
-        <p class="module-desc">Tawakkul is not passivity. It is the most aggressive form of action available to a Muslim man. Understand the precise difference between pushing against a closed door and flowing through an open one.</p>
+        <p class="module-desc">Tawakkul is not passivity. It is the most aggressive form of action available to a Muslim man. Understand the difference between pushing against a closed door and flowing through an open one.</p>
         <div class="module-tag">Tawakkul &middot; 'Amal</div>
       </div>
       <div class="module-card">
         <div class="module-num">Law 07</div>
         <div class="module-title">The Law of Barakah</div>
-        <p class="module-desc">Divine multiplication is documented, repeatable, and available to you. These are the precise inner and outer conditions, halal income, sadaqah, pure intention, connection to Allah, that activate it.</p>
+        <p class="module-desc">Divine multiplication is documented, repeatable, and available to you. These are the precise inner and outer conditions &mdash; halal income, sadaqah, pure intention, connection to Allah &mdash; that activate it.</p>
         <div class="module-tag">Barakah &middot; Divine Multiplication</div>
       </div>
     </div>
@@ -732,31 +725,27 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
 
 <!-- BONUSES -->
 <section class="section bonus-section">
-  <div class="wrap-wide">
+  <div class="wrap">
     <div class="bonus-header">
-      <div class="eyebrow" style="justify-content:center">Everything You Get Today</div>
+      <div class="eyebrow">Everything You Get Today</div>
       <h2 class="h1">Three bonuses included.<br><em>Free. Right now.</em></h2>
-      <p class="body" style="margin-top:16px;max-width:520px;margin-left:auto;margin-right:auto;text-align:center">Every bonus is designed to do one specific thing the course on its own cannot: give you the next move before the momentum stops.</p>
     </div>
 
     <div class="bonus-cards">
       <div class="bonus-card">
         <div class="bonus-badge">Bonus 01 &ndash; Free</div>
-        <div class="bonus-num">01</div>
-        <h3 class="bonus-title">The 7-Day<br><em>Activation Roadmap</em></h3>
-        <p class="bonus-desc">Most men finish a course feeling inspired, and wake up Monday not knowing what to do first. This roadmap removes that excuse. Seven days. Seven specific actions. One law activated per day, with a single concrete move that proves to yourself the flow has already begun. By day seven, you are no longer the man who is thinking about starting. You are the man who already did.</p>
+        <h3 class="bonus-title">The 7-Day <em>Activation Roadmap</em></h3>
+        <p class="bonus-desc">Most men finish a course feeling inspired and wake up Monday not knowing what to do first. This roadmap removes that excuse. One law activated per day. One concrete action. By day seven, you are no longer the man thinking about starting &mdash; you are the man who already did.</p>
       </div>
       <div class="bonus-card">
         <div class="bonus-badge">Bonus 02 &ndash; Free</div>
-        <div class="bonus-num">02</div>
-        <h3 class="bonus-title">The Focus<br><em>Economy</em></h3>
-        <p class="bonus-desc">Once the inner block is removed, a new question arrives: what do I actually build? This guide introduces the framework for converting your knowledge, experience, and deen into a real income stream online. Not the full system, that comes later. This is the door opening. The moment you see that the economy values exactly what you already carry. A Muslim man who understands this never goes back to waiting.</p>
+        <h3 class="bonus-title">The Focus <em>Economy</em></h3>
+        <p class="bonus-desc">Once the inner block is removed, a new question arrives: what do I actually build? This guide shows you how to convert your knowledge, experience, and deen into a real income stream online. A Muslim man who understands this never goes back to waiting.</p>
       </div>
       <div class="bonus-card">
         <div class="bonus-badge">Bonus 03 &ndash; Free</div>
-        <div class="bonus-num">03</div>
-        <h3 class="bonus-title">Private<br><em>Community Access</em></h3>
-        <p class="bonus-desc">The man who walks this path alone walks it slower. When you join Rizq Flow, you get access to a private community of Muslim men doing the same inner work, sharing the shifts, asking the real questions, holding each other to the standard. This is not a Facebook group full of noise. It is a focused, high-quality room where the only subject is the work. Brotherhood in the build.</p>
+        <h3 class="bonus-title">Private <em>Community Access</em></h3>
+        <p class="bonus-desc">The man who walks this path alone walks it slower. Private access to a community of Muslim men doing the same inner work &mdash; asking the real questions, holding each other to the standard. High-quality. Focused. Brotherhood in the build.</p>
       </div>
     </div>
   </div>
@@ -775,75 +764,72 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
 
 <!-- PRICING -->
 <section class="section pricing-section" id="pricing">
-  <div class="wrap-wide">
-    <div class="wrap" style="padding:0;margin-bottom:clamp(40px,6vw,64px)">
-      <div class="eyebrow">Your Investment</div>
-      <h2 class="h1">Everything you need.<br><em>At the founding price.</em></h2>
-    </div>
+  <div class="wrap">
+    <div class="eyebrow">Your Investment</div>
+    <h2 class="h1" style="margin-bottom:clamp(32px,5vw,52px)">Everything you need.<br><em>At the founding price.</em></h2>
 
-    <div class="pricing-layout">
+    <div class="pricing-card">
+      <div class="pricing-inner">
+        <div class="pricing-badge">Founding Price &ndash; Limited</div>
+        <h3 class="pricing-title">Rizq Flow</h3>
+        <p class="pricing-subtitle">The Muslim Man's Path To Divine Provision</p>
 
-      <div class="pricing-card">
-        <div class="pricing-inner">
-          <div class="pricing-badge">Founding Price &ndash; Limited</div>
-          <h3 class="pricing-title">Rizq Flow</h3>
-          <p class="pricing-subtitle">The Muslim Man's Path To Divine Provision</p>
+        <p class="price-anchor">Less than a meal out. More than most men will ever invest in their inner architecture.</p>
 
-          <div class="price-row">
-            <span class="price-now">$27</span>
-            <span class="price-was">$47</span>
-          </div>
-          <p class="price-saving">Price rises to $47 when this offer closes. <strong>Save $20 today.</strong></p>
+        <div class="price-row">
+          <span class="price-now">$27</span>
+          <span class="price-was">$47</span>
+        </div>
+        <p class="price-saving">Price rises to $47 this week. <strong>Save $20 today.</strong></p>
 
-          <ul class="checklist">
-            <li><span class="check-mark">&#10022;</span> Full Rizq Flow Course &ndash; All 7 Laws</li>
-            <li><span class="check-mark">&#10022;</span> Bonus 01: The 7-Day Activation Roadmap</li>
-            <li><span class="check-mark">&#10022;</span> Bonus 02: The Focus Economy Guide</li>
-            <li><span class="check-mark">&#10022;</span> Bonus 03: Private Community Access</li>
-            <li><span class="check-mark">&#10022;</span> Immediate Access &ndash; Start today</li>
-            <li><span class="check-mark">&#10022;</span> Lifetime Access &ndash; Revisit anytime</li>
-            <li><span class="check-mark">&#10022;</span> 7-Day Money Back Guarantee</li>
-          </ul>
+        <ul class="checklist">
+          <li><span class="check-mark">&#10022;</span> Full Rizq Flow Course &ndash; All 7 Laws</li>
+          <li><span class="check-mark">&#10022;</span> Bonus 01: The 7-Day Activation Roadmap</li>
+          <li><span class="check-mark">&#10022;</span> Bonus 02: The Focus Economy Guide</li>
+          <li><span class="check-mark">&#10022;</span> Bonus 03: Private Community Access</li>
+          <li><span class="check-mark">&#10022;</span> Immediate Access &ndash; Start today</li>
+          <li><span class="check-mark">&#10022;</span> Lifetime Access &ndash; Revisit anytime</li>
+        </ul>
 
-          <a href="https://buy.stripe.com/3cI14n243dgZ9VPd5ybII00"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="btn-primary"
-             onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'USD'})">
-            Yes &ndash; Give Me Rizq Flow For $27
-          </a>
-          <p class="btn-note" style="margin-top:14px">Secure checkout &middot; Instant access &middot; Price rises soon</p>
-
-          <div class="guarantee-block">
-            <div class="shield-icon">&#128737;</div>
-            <div>
-              <div class="guarantee-title">7-Day Money Back Guarantee</div>
-              <p class="guarantee-text">Go through the course. Do the work. If you don't feel a shift in your inner state within 7 days, email us. You get every dollar back. No questions. No friction. No exceptions. We take all the risk because we are that certain this changes something in you.</p>
-            </div>
+        <div class="guarantee-block">
+          <div class="shield-icon">&#128737;</div>
+          <div>
+            <div class="guarantee-title">7-Day Money Back Guarantee</div>
+            <p class="guarantee-text">Go through the course. Do the work. If you don't feel a shift in your inner state within 7 days, email us. Every dollar back. No questions. No friction. We take all the risk.</p>
           </div>
         </div>
-      </div>
 
-      <div class="pricing-aside">
-        <div class="aside-block">
-          <div class="aside-label">Who This Is For</div>
-          <p class="aside-text">The Muslim man who has tried hard work, made du'a, had good intentions, and still feels like <strong>something invisible is holding everything back.</strong></p>
-        </div>
-        <div class="aside-block">
-          <div class="aside-label">Who This Is Not For</div>
-          <p class="aside-text">The man looking for a shortcut to money without the inner work. <strong>This course changes you first.</strong> The provision follows. Not the other way around.</p>
-        </div>
-        <div class="aside-block">
-          <div class="aside-label">What Happens When You Buy</div>
-          <p class="aside-text">Immediate access. The course, all three bonuses, and the community, <strong>available the moment you check out.</strong> No waiting. No delay.</p>
-        </div>
-        <div class="aside-block">
-          <div class="aside-label">A Word From Imaad</div>
-          <p class="aside-text" style="font-size:clamp(14px,1.8vw,17px);line-height:1.75">"I built this because I was the man this course is for. I know what it costs to stay blocked, not in money, but in years. I didn't want to teach theory. I wanted to hand you the exact thing that moved the block for me. That's what this is. I went first. Now come."</p>
-        </div>
-      </div>
+        <a href="https://buy.stripe.com/3cI14n243dgZ9VPd5ybII00"
+           target="_blank" rel="noopener noreferrer"
+           class="btn-primary"
+           style="margin-top:20px"
+           onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'USD'})">
+          Yes &ndash; Give Me Rizq Flow For $27
+        </a>
+        <p class="btn-note" style="margin-top:14px">Secure checkout &middot; Instant access &middot; Price rises this week</p>
 
+      </div>
     </div>
+
+    <div class="pricing-context">
+      <div class="context-block">
+        <div class="context-label">Who This Is For</div>
+        <p class="context-text">The Muslim man who has tried hard work, made du'a, had good intentions &mdash; and still feels like <strong>something invisible is holding everything back.</strong></p>
+      </div>
+      <div class="context-block">
+        <div class="context-label">Who This Is Not For</div>
+        <p class="context-text">The man looking for a shortcut to money without the inner work. <strong>This course changes you first.</strong> The provision follows. Not the other way around.</p>
+      </div>
+      <div class="context-block">
+        <div class="context-label">What Happens When You Buy</div>
+        <p class="context-text">Immediate access. The course, all three bonuses, and the community &mdash; <strong>available the moment you check out.</strong> No waiting. No delay.</p>
+      </div>
+      <div class="context-block">
+        <div class="context-label">A Word From Imaad</div>
+        <p class="context-text">"I built this because I was the man this course is for. I know what it costs to stay blocked &mdash; not in money, but in years. I didn't want to teach theory. I wanted to hand you the exact thing that moved the block for me. I went first. Now come."</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -851,7 +837,7 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
 <section class="section faq-section">
   <div class="wrap">
     <div class="eyebrow">Before You Decide</div>
-    <h2 class="h2" style="margin-bottom:clamp(32px,5vw,52px)">Questions <em>answered.</em></h2>
+    <h2 class="h2" style="margin-bottom:clamp(32px,5vw,48px)">Questions <em>answered.</em></h2>
 
     <div class="faq-grid">
       <div class="faq-item">
@@ -859,24 +845,24 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
         <div class="faq-answer">No. Most rizq courses teach theology. This course removes the inner block that stops the theology from working in your actual life. There is a difference between knowing a Quran verse and having it move something inside you. This course creates the second experience.</div>
       </div>
       <div class="faq-item">
+        <button class="faq-btn">Why is the price this low?<em class="faq-icon">+</em></button>
+        <div class="faq-answer">The founding price exists to get this into the hands of men who need it most, before the price reflects its full value. When this week closes, the price moves to $47. There is no trick here. Act on it while the door is open at $27.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">What if I want a refund?<em class="faq-icon">+</em></button>
+        <div class="faq-answer">7 days. Full refund. No questions. Email us and it is done within 24 hours. We take all the risk. You shouldn't have to take any to find out if this is real.</div>
+      </div>
+      <div class="faq-item">
         <button class="faq-btn">How long does it take to complete?<em class="faq-icon">+</em></button>
-        <div class="faq-answer">You can move through the core content in a focused weekend. The inner work takes as long as it takes. Most men report feeling a real shift within the first three laws. The 7-Day Activation Roadmap keeps the momentum going after you finish.</div>
+        <div class="faq-answer">You can move through the core content in a focused weekend. Most men report feeling a real shift within the first three laws. The 7-Day Activation Roadmap keeps the momentum going after you finish.</div>
       </div>
       <div class="faq-item">
         <button class="faq-btn">I've bought courses and didn't finish them. Why is this different?<em class="faq-icon">+</em></button>
         <div class="faq-answer">Because this course is built for one specific man with one specific problem, and every law speaks directly to where he is stuck. When something speaks directly to your chest, not your head, you finish it. That is the design.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-btn">What if I want a refund?<em class="faq-icon">+</em></button>
-        <div class="faq-answer">7 days. Full refund. No questions. Email us and it is done within 24 hours. We built the guarantee this way because we are comfortable taking all the risk. You shouldn't have to take any to find out if this is real.</div>
-      </div>
-      <div class="faq-item">
         <button class="faq-btn">Is this for practicing Muslims only?<em class="faq-icon">+</em></button>
-        <div class="faq-answer">This course is built entirely from Quranic and Sunnah principles. That framework is the foundation, not the decoration. If you are a Muslim man at any stage of practice, active, returning, or still finding your way, this will meet you exactly where you are.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-btn">Why is the price this low?<em class="faq-icon">+</em></button>
-        <div class="faq-answer">The founding price exists to get this into the hands of men who need it most, before the price reflects its full value. When this launch window closes, the price moves to $47. After that, it may go higher. There is no trick here. Act on it while the door is open at $27.</div>
+        <div class="faq-answer">If you are a Muslim man at any stage of practice &mdash; active, returning, or still finding your way &mdash; this will meet you exactly where you are. The framework is the foundation, not a barrier.</div>
       </div>
     </div>
   </div>
@@ -896,16 +882,19 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
 
     <div class="final-btn-group">
       <a href="https://buy.stripe.com/3cI14n243dgZ9VPd5ybII00"
-         target="_blank"
-         rel="noopener noreferrer"
+         target="_blank" rel="noopener noreferrer"
          class="btn-primary"
          onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'USD'})">
-        Open My Rizq Flow &ndash; $27
+        Get Instant Access &ndash; $27
       </a>
-      <p class="btn-note">Founding price &middot; Rises to $47 &middot; 7-Day Guarantee &middot; Instant Access</p>
+      <p class="btn-note">Founding price &middot; Rises to $47 this week &middot; 7-Day Guarantee</p>
     </div>
 
     <div class="spine-line" style="margin-top:clamp(32px,5vw,52px);background:linear-gradient(to bottom,var(--gold-dim),transparent)"></div>
+
+    <p class="ps-block">
+      <strong>P.S.</strong> &mdash; The price is $27 now. That changes this week. If you've read this far, you already know this is for you.
+    </p>
   </div>
 </section>
 
@@ -932,11 +921,10 @@ footer{border-top:1px solid var(--border);padding:clamp(32px,5vw,56px) 0;text-al
     <span class="sticky-price-was">Rising to $47</span>
   </div>
   <a href="https://buy.stripe.com/3cI14n243dgZ9VPd5ybII00"
-     target="_blank"
-     rel="noopener noreferrer"
+     target="_blank" rel="noopener noreferrer"
      class="sticky-btn"
      onclick="fbq('track','InitiateCheckout',{value:27.00,currency:'USD'})">
-    Get Rizq Flow Now
+    Get Instant Access
   </a>
 </div>
 
@@ -958,8 +946,8 @@ new IntersectionObserver(entries => {
   sticky.classList.toggle('visible', !entries[0].isIntersecting);
 }, { threshold: 0.05 }).observe(heroEl);
 
-// Scroll fade-in for cards
-const scrollEls = document.querySelectorAll('.module-card,.bonus-card,.arc-step,.faq-item,.aside-block');
+// Scroll fade-in
+const scrollEls = document.querySelectorAll('.module-card,.bonus-card,.faq-item,.context-block,.qualifier-item,.founder-quote');
 const scrollIO = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
